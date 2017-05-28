@@ -13,6 +13,7 @@
 		859A2E8B1EC742F40088D8A1 /* BitHawkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E8A1EC742F40088D8A1 /* BitHawkTests.swift */; };
 		859A2E961EC742F40088D8A1 /* BitHawkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E951EC742F40088D8A1 /* BitHawkUITests.swift */; };
 		85B0EE7F1EDAC73E00BA0A7B /* BBSettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B0EE7E1EDAC73E00BA0A7B /* BBSettingsWindowController.swift */; };
+		85B9C1C81EDAD315000ABC66 /* BBWalletSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B9C1C71EDAD315000ABC66 /* BBWalletSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		859A2E951EC742F40088D8A1 /* BitHawkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitHawkUITests.swift; sourceTree = "<group>"; };
 		859A2E971EC742F40088D8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85B0EE7E1EDAC73E00BA0A7B /* BBSettingsWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBSettingsWindowController.swift; sourceTree = "<group>"; };
+		85B9C1C71EDAD315000ABC66 /* BBWalletSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBWalletSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				859A2E7E1EC742F40088D8A1 /* Main.storyboard */,
 				859A2E811EC742F40088D8A1 /* Info.plist */,
 				85B0EE7E1EDAC73E00BA0A7B /* BBSettingsWindowController.swift */,
+				85B9C1C71EDAD315000ABC66 /* BBWalletSettingsViewController.swift */,
 			);
 			path = BitHawk;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			files = (
 				85B0EE7F1EDAC73E00BA0A7B /* BBSettingsWindowController.swift in Sources */,
 				859A2E791EC742F40088D8A1 /* AppDelegate.swift in Sources */,
+				85B9C1C81EDAD315000ABC66 /* BBWalletSettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
