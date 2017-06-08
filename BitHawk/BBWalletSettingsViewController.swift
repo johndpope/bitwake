@@ -48,14 +48,14 @@ extension BBWalletSettingsViewController: NSTableViewDelegate {
         }
         else if tableColumn == tableView.tableColumns[1] { // Name
             if let cellView = tableView.make(withIdentifier: nameCellId, owner: nil) as? NSTableCellView {
-                cellView.textField?.stringValue = "name"
+                cellView.textField?.stringValue = ""
                 
                 return cellView
             }
         }
         else if tableColumn == tableView.tableColumns[2] { // Address
             if let cellView = tableView.make(withIdentifier: addressCellId, owner: nil) as? NSTableCellView {
-                cellView.textField?.stringValue = "address"
+                cellView.textField?.stringValue = ""
                 return cellView
             }
         }
