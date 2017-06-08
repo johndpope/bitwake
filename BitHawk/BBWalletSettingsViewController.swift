@@ -16,10 +16,22 @@ let addressCellId = "AddressCellId"
 class BBWalletSettingsViewController: NSViewController {
     
     @IBOutlet weak var walletsTableView: NSTableView!
+    @IBOutlet weak var addRemoveSegmentedControl: NSSegmentedControl!
     
     override func viewDidLoad() {
         walletsTableView.delegate = self
         walletsTableView.dataSource = self
+    }
+    
+    @IBAction func clickedSegmentedControl(_ sender: NSSegmentedControl) {
+        if sender.selectedSegment == 0 { // Add button
+            let numberOfRows = self.walletsTableView.numberOfRows
+            self.walletsTableView.insertRows(at: IndexSet(integer: numberOfRows), withAnimation: NSTableViewAnimationOptions.slideDown)
+            self.walletsTableView.editColumn(1, row: numberOfRows, with: nil, select: true)
+        }
+        else { // Remove button
+            self.walletsTableView.removeRows(at: self.walletsTableView.selectedRowIndexes, withAnimation: NSTableViewAnimationOptions.effectFade)
+        }
     }
 }
 

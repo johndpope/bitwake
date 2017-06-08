@@ -815,7 +815,7 @@
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvY-Tx-cOP">
                                                                     <rect key="frame" x="0.0" y="0.0" width="97" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="yYs-Pz-Idp">
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Table View Cell" id="yYs-Pz-Idp">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -845,10 +845,10 @@
                                                             <rect key="frame" x="136" y="1" width="220" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sww-dN-eGS">
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sww-dN-eGS">
                                                                     <rect key="frame" x="0.0" y="0.0" width="220" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="qzD-zf-ZGG">
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Table View Cell" id="qzD-zf-ZGG">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -889,10 +889,17 @@
                                 <segmentedCell key="cell" borderStyle="border" focusRingType="none" alignment="left" style="smallSquare" trackingMode="momentary" id="mYZ-Cs-bw0">
                                     <font key="font" metaFont="system"/>
                                     <segments>
-                                        <segment image="NSAddTemplate" width="32"/>
-                                        <segment image="NSRemoveTemplate" width="32" tag="1"/>
+                                        <segment image="NSAddTemplate" width="32">
+                                            <nil key="label"/>
+                                        </segment>
+                                        <segment image="NSRemoveTemplate" width="32" tag="1">
+                                            <nil key="label"/>
+                                        </segment>
                                     </segments>
                                 </segmentedCell>
+                                <connections>
+                                    <action selector="clickedSegmentedControl:" target="qrq-eq-eft" id="iVI-X3-i1d"/>
+                                </connections>
                             </segmentedControl>
                             <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXU-Fj-qUj">
                                 <rect key="frame" x="86" y="20" width="344" height="23"/>
@@ -916,6 +923,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addRemoveSegmentedControl" destination="AqF-Om-GwK" id="eGz-ds-2IC"/>
                         <outlet property="walletsTableView" destination="6Yp-L6-r7X" id="8dV-bd-c8f"/>
                     </connections>
                 </viewController>
