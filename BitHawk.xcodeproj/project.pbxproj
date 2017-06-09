@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8514F8711EEAEF16005E5CBA /* WalletsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8514F8701EEAEF16005E5CBA /* WalletsCollection.swift */; };
+		8514F8741EEAF082005E5CBA /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8514F8731EEAF082005E5CBA /* Wallet.swift */; };
 		859A2E791EC742F40088D8A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E781EC742F40088D8A1 /* AppDelegate.swift */; };
 		859A2E7D1EC742F40088D8A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859A2E7C1EC742F40088D8A1 /* Assets.xcassets */; };
 		859A2E801EC742F40088D8A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859A2E7E1EC742F40088D8A1 /* Main.storyboard */; };
 		859A2E8B1EC742F40088D8A1 /* BitHawkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E8A1EC742F40088D8A1 /* BitHawkTests.swift */; };
 		859A2E961EC742F40088D8A1 /* BitHawkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E951EC742F40088D8A1 /* BitHawkUITests.swift */; };
-		85B0EE7F1EDAC73E00BA0A7B /* BBSettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B0EE7E1EDAC73E00BA0A7B /* BBSettingsWindowController.swift */; };
-		85B9C1C81EDAD315000ABC66 /* BBWalletSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B9C1C71EDAD315000ABC66 /* BBWalletSettingsViewController.swift */; };
+		85B0EE7F1EDAC73E00BA0A7B /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B0EE7E1EDAC73E00BA0A7B /* SettingsWindowController.swift */; };
+		85B9C1C81EDAD315000ABC66 /* WalletSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B9C1C71EDAD315000ABC66 /* WalletSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8514F8701EEAEF16005E5CBA /* WalletsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsCollection.swift; sourceTree = "<group>"; };
+		8514F8731EEAF082005E5CBA /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		859A2E751EC742F40088D8A1 /* BitHawk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitHawk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859A2E781EC742F40088D8A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		859A2E7C1EC742F40088D8A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,8 +49,8 @@
 		859A2E911EC742F40088D8A1 /* BitHawkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitHawkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		859A2E951EC742F40088D8A1 /* BitHawkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitHawkUITests.swift; sourceTree = "<group>"; };
 		859A2E971EC742F40088D8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85B0EE7E1EDAC73E00BA0A7B /* BBSettingsWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBSettingsWindowController.swift; sourceTree = "<group>"; };
-		85B9C1C71EDAD315000ABC66 /* BBWalletSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBWalletSettingsViewController.swift; sourceTree = "<group>"; };
+		85B0EE7E1EDAC73E00BA0A7B /* SettingsWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		85B9C1C71EDAD315000ABC66 /* WalletSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8514F8721EEAF076005E5CBA /* models */ = {
+			isa = PBXGroup;
+			children = (
+				8514F8701EEAEF16005E5CBA /* WalletsCollection.swift */,
+				8514F8731EEAF082005E5CBA /* Wallet.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
 		859A2E6C1EC742F30088D8A1 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +110,13 @@
 		859A2E771EC742F40088D8A1 /* BitHawk */ = {
 			isa = PBXGroup;
 			children = (
+				8514F8721EEAF076005E5CBA /* models */,
 				859A2E781EC742F40088D8A1 /* AppDelegate.swift */,
 				859A2E7C1EC742F40088D8A1 /* Assets.xcassets */,
 				859A2E7E1EC742F40088D8A1 /* Main.storyboard */,
 				859A2E811EC742F40088D8A1 /* Info.plist */,
-				85B0EE7E1EDAC73E00BA0A7B /* BBSettingsWindowController.swift */,
-				85B9C1C71EDAD315000ABC66 /* BBWalletSettingsViewController.swift */,
+				85B0EE7E1EDAC73E00BA0A7B /* SettingsWindowController.swift */,
+				85B9C1C71EDAD315000ABC66 /* WalletSettingsViewController.swift */,
 			);
 			path = BitHawk;
 			sourceTree = "<group>";
@@ -258,9 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85B0EE7F1EDAC73E00BA0A7B /* BBSettingsWindowController.swift in Sources */,
+				8514F8741EEAF082005E5CBA /* Wallet.swift in Sources */,
+				8514F8711EEAEF16005E5CBA /* WalletsCollection.swift in Sources */,
+				85B0EE7F1EDAC73E00BA0A7B /* SettingsWindowController.swift in Sources */,
 				859A2E791EC742F40088D8A1 /* AppDelegate.swift in Sources */,
-				85B9C1C81EDAD315000ABC66 /* BBWalletSettingsViewController.swift in Sources */,
+				85B9C1C81EDAD315000ABC66 /* WalletSettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
