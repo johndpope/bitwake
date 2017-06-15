@@ -39,6 +39,24 @@ class BBWalletSettingsViewController: NSViewController {
             self.walletsTableView.removeRows(at: self.walletsTableView.selectedRowIndexes, withAnimation: NSTableViewAnimationOptions.effectFade)
         }
     }
+    
+    @IBAction func onDidEditName(_ sender: NSTextField) {
+        debugPrint("Edited name")
+        
+        let editedWalletIndex = self.walletsTableView.selectedRow
+        
+        guard editedWalletIndex != -1 else {
+            return
+        }
+        
+        let wallet = self.walletsCollection.wallet(atIndex: editedWalletIndex)
+        
+        wallet?.name = sender.stringValue
+    }
+    
+    @IBAction func onDidEditAddress(_ sender: NSTextField) {
+        debugPrint("Edited address")
+    }
 }
 
 extension BBWalletSettingsViewController: NSTableViewDelegate {
@@ -76,11 +94,6 @@ extension BBWalletSettingsViewController: NSTableViewDelegate {
             debugPrint("Unexpected")
         }
         
-        return nil
-    }
-    
-    func tableView(_ tableView: NSTableView, dataCellFor tableColumn: NSTableColumn?, row: Int) -> NSCell? {
-        debugPrint("")
         return nil
     }
 }

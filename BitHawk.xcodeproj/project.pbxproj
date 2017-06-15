@@ -85,6 +85,14 @@
 			name = models;
 			sourceTree = "<group>";
 		};
+		855A48F91EED701700F3D248 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				85B9C1C71EDAD315000ABC66 /* WalletSettingsViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		859A2E6C1EC742F30088D8A1 = {
 			isa = PBXGroup;
 			children = (
@@ -109,11 +117,11 @@
 			isa = PBXGroup;
 			children = (
 				8514F8721EEAF076005E5CBA /* models */,
+				855A48F91EED701700F3D248 /* Settings */,
 				859A2E781EC742F40088D8A1 /* AppDelegate.swift */,
 				859A2E7C1EC742F40088D8A1 /* Assets.xcassets */,
 				859A2E7E1EC742F40088D8A1 /* Main.storyboard */,
 				859A2E811EC742F40088D8A1 /* Info.plist */,
-				85B9C1C71EDAD315000ABC66 /* WalletSettingsViewController.swift */,
 			);
 			path = BitHawk;
 			sourceTree = "<group>";

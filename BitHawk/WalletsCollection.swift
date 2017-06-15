@@ -1,3 +1,4 @@
+
 //
 //  Wallets.swift
 //  BitHawk
@@ -8,12 +9,24 @@
 
 import Foundation
 
+let kStoreWalletsKey = "Wallets"
+
 class WalletsCollection {
     static let shared = WalletsCollection()
     var wallets: [Wallet] = []
     
     // Private because it's a singleton
     private init() {}
+    
+    public func updateWalletsStore() {
+        let userDefaults = UserDefaults.standard
+        
+        let walletsEncoded = NSKeyedArchiver.archivedData(withRootObject: self.wallets)
+        
+        userDefaults.setValue(walletsEncoded, forKey: kStoreWalletsKey)
+        
+        debugPrint(userDefaults.dictionaryRepresentation())
+    }
     
     func wallet(atIndex: Int) -> Wallet? {
         return self.wallets[atIndex]
