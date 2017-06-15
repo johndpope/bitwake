@@ -12,8 +12,8 @@
 		859A2E791EC742F40088D8A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E781EC742F40088D8A1 /* AppDelegate.swift */; };
 		859A2E7D1EC742F40088D8A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859A2E7C1EC742F40088D8A1 /* Assets.xcassets */; };
 		859A2E801EC742F40088D8A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859A2E7E1EC742F40088D8A1 /* Main.storyboard */; };
-		859A2E8B1EC742F40088D8A1 /* BitHawkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E8A1EC742F40088D8A1 /* BitHawkTests.swift */; };
-		859A2E961EC742F40088D8A1 /* BitHawkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E951EC742F40088D8A1 /* BitHawkUITests.swift */; };
+		859A2E8B1EC742F40088D8A1 /* BitWakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E8A1EC742F40088D8A1 /* BitWakeTests.swift */; };
+		859A2E961EC742F40088D8A1 /* BitWakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E951EC742F40088D8A1 /* BitWakeUITests.swift */; };
 		85B9C1C81EDAD315000ABC66 /* WalletSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B9C1C71EDAD315000ABC66 /* WalletSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,30 +23,30 @@
 			containerPortal = 859A2E6D1EC742F30088D8A1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 859A2E741EC742F40088D8A1;
-			remoteInfo = BitHawk;
+			remoteInfo = BitWake;
 		};
 		859A2E921EC742F40088D8A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 859A2E6D1EC742F30088D8A1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 859A2E741EC742F40088D8A1;
-			remoteInfo = BitHawk;
+			remoteInfo = BitWake;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8514F8701EEAEF16005E5CBA /* WalletsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsCollection.swift; sourceTree = "<group>"; };
 		8514F8731EEAF082005E5CBA /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
-		859A2E751EC742F40088D8A1 /* BitHawk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitHawk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		859A2E751EC742F40088D8A1 /* BitWake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitWake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859A2E781EC742F40088D8A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		859A2E7C1EC742F40088D8A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		859A2E7F1EC742F40088D8A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		859A2E811EC742F40088D8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		859A2E861EC742F40088D8A1 /* BitHawkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitHawkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		859A2E8A1EC742F40088D8A1 /* BitHawkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitHawkTests.swift; sourceTree = "<group>"; };
+		859A2E861EC742F40088D8A1 /* BitWakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitWakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		859A2E8A1EC742F40088D8A1 /* BitWakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitWakeTests.swift; sourceTree = "<group>"; };
 		859A2E8C1EC742F40088D8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		859A2E911EC742F40088D8A1 /* BitHawkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitHawkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		859A2E951EC742F40088D8A1 /* BitHawkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitHawkUITests.swift; sourceTree = "<group>"; };
+		859A2E911EC742F40088D8A1 /* BitWakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitWakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		859A2E951EC742F40088D8A1 /* BitWakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitWakeUITests.swift; sourceTree = "<group>"; };
 		859A2E971EC742F40088D8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85B9C1C71EDAD315000ABC66 /* WalletSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,9 +96,9 @@
 		859A2E6C1EC742F30088D8A1 = {
 			isa = PBXGroup;
 			children = (
-				859A2E771EC742F40088D8A1 /* BitHawk */,
-				859A2E891EC742F40088D8A1 /* BitHawkTests */,
-				859A2E941EC742F40088D8A1 /* BitHawkUITests */,
+				859A2E771EC742F40088D8A1 /* BitWake */,
+				859A2E891EC742F40088D8A1 /* BitWakeTests */,
+				859A2E941EC742F40088D8A1 /* BitWakeUITests */,
 				859A2E761EC742F40088D8A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,14 +106,14 @@
 		859A2E761EC742F40088D8A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				859A2E751EC742F40088D8A1 /* BitHawk.app */,
-				859A2E861EC742F40088D8A1 /* BitHawkTests.xctest */,
-				859A2E911EC742F40088D8A1 /* BitHawkUITests.xctest */,
+				859A2E751EC742F40088D8A1 /* BitWake.app */,
+				859A2E861EC742F40088D8A1 /* BitWakeTests.xctest */,
+				859A2E911EC742F40088D8A1 /* BitWakeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		859A2E771EC742F40088D8A1 /* BitHawk */ = {
+		859A2E771EC742F40088D8A1 /* BitWake */ = {
 			isa = PBXGroup;
 			children = (
 				8514F8721EEAF076005E5CBA /* models */,
@@ -123,33 +123,35 @@
 				859A2E7E1EC742F40088D8A1 /* Main.storyboard */,
 				859A2E811EC742F40088D8A1 /* Info.plist */,
 			);
-			path = BitHawk;
+			path = BitWake;
 			sourceTree = "<group>";
 		};
-		859A2E891EC742F40088D8A1 /* BitHawkTests */ = {
+		859A2E891EC742F40088D8A1 /* BitWakeTests */ = {
 			isa = PBXGroup;
 			children = (
-				859A2E8A1EC742F40088D8A1 /* BitHawkTests.swift */,
+				859A2E8A1EC742F40088D8A1 /* BitWakeTests.swift */,
 				859A2E8C1EC742F40088D8A1 /* Info.plist */,
 			);
-			path = BitHawkTests;
+			name = BitWakeTests;
+			path = BitWakeTests;
 			sourceTree = "<group>";
 		};
-		859A2E941EC742F40088D8A1 /* BitHawkUITests */ = {
+		859A2E941EC742F40088D8A1 /* BitWakeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				859A2E951EC742F40088D8A1 /* BitHawkUITests.swift */,
+				859A2E951EC742F40088D8A1 /* BitWakeUITests.swift */,
 				859A2E971EC742F40088D8A1 /* Info.plist */,
 			);
-			path = BitHawkUITests;
+			name = BitWakeUITests;
+			path = BitWakeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		859A2E741EC742F40088D8A1 /* BitHawk */ = {
+		859A2E741EC742F40088D8A1 /* BitWake */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 859A2E9A1EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitHawk" */;
+			buildConfigurationList = 859A2E9A1EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitWake" */;
 			buildPhases = (
 				859A2E711EC742F40088D8A1 /* Sources */,
 				859A2E721EC742F40088D8A1 /* Frameworks */,
@@ -159,14 +161,14 @@
 			);
 			dependencies = (
 			);
-			name = BitHawk;
-			productName = BitHawk;
-			productReference = 859A2E751EC742F40088D8A1 /* BitHawk.app */;
+			name = BitWake;
+			productName = BitWake;
+			productReference = 859A2E751EC742F40088D8A1 /* BitWake.app */;
 			productType = "com.apple.product-type.application";
 		};
-		859A2E851EC742F40088D8A1 /* BitHawkTests */ = {
+		859A2E851EC742F40088D8A1 /* BitWakeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 859A2E9D1EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitHawkTests" */;
+			buildConfigurationList = 859A2E9D1EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitWakeTests" */;
 			buildPhases = (
 				859A2E821EC742F40088D8A1 /* Sources */,
 				859A2E831EC742F40088D8A1 /* Frameworks */,
@@ -177,14 +179,14 @@
 			dependencies = (
 				859A2E881EC742F40088D8A1 /* PBXTargetDependency */,
 			);
-			name = BitHawkTests;
-			productName = BitHawkTests;
-			productReference = 859A2E861EC742F40088D8A1 /* BitHawkTests.xctest */;
+			name = BitWakeTests;
+			productName = BitWakeTests;
+			productReference = 859A2E861EC742F40088D8A1 /* BitWakeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		859A2E901EC742F40088D8A1 /* BitHawkUITests */ = {
+		859A2E901EC742F40088D8A1 /* BitWakeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 859A2EA01EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitHawkUITests" */;
+			buildConfigurationList = 859A2EA01EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitWakeUITests" */;
 			buildPhases = (
 				859A2E8D1EC742F40088D8A1 /* Sources */,
 				859A2E8E1EC742F40088D8A1 /* Frameworks */,
@@ -195,9 +197,9 @@
 			dependencies = (
 				859A2E931EC742F40088D8A1 /* PBXTargetDependency */,
 			);
-			name = BitHawkUITests;
-			productName = BitHawkUITests;
-			productReference = 859A2E911EC742F40088D8A1 /* BitHawkUITests.xctest */;
+			name = BitWakeUITests;
+			productName = BitWakeUITests;
+			productReference = 859A2E911EC742F40088D8A1 /* BitWakeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -226,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 859A2E701EC742F30088D8A1 /* Build configuration list for PBXProject "BitHawk" */;
+			buildConfigurationList = 859A2E701EC742F30088D8A1 /* Build configuration list for PBXProject "BitWake" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -239,9 +241,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				859A2E741EC742F40088D8A1 /* BitHawk */,
-				859A2E851EC742F40088D8A1 /* BitHawkTests */,
-				859A2E901EC742F40088D8A1 /* BitHawkUITests */,
+				859A2E741EC742F40088D8A1 /* BitWake */,
+				859A2E851EC742F40088D8A1 /* BitWakeTests */,
+				859A2E901EC742F40088D8A1 /* BitWakeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				859A2E8B1EC742F40088D8A1 /* BitHawkTests.swift in Sources */,
+				859A2E8B1EC742F40088D8A1 /* BitWakeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				859A2E961EC742F40088D8A1 /* BitHawkUITests.swift in Sources */,
+				859A2E961EC742F40088D8A1 /* BitWakeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,12 +307,12 @@
 /* Begin PBXTargetDependency section */
 		859A2E881EC742F40088D8A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 859A2E741EC742F40088D8A1 /* BitHawk */;
+			target = 859A2E741EC742F40088D8A1 /* BitWake */;
 			targetProxy = 859A2E871EC742F40088D8A1 /* PBXContainerItemProxy */;
 		};
 		859A2E931EC742F40088D8A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 859A2E741EC742F40088D8A1 /* BitHawk */;
+			target = 859A2E741EC742F40088D8A1 /* BitWake */;
 			targetProxy = 859A2E921EC742F40088D8A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -424,9 +426,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = BitHawk/Info.plist;
+				INFOPLIST_FILE = BitWake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitHawk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitWake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -437,9 +439,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = BitHawk/Info.plist;
+				INFOPLIST_FILE = BitWake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitHawk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitWake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -451,12 +453,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = BitHawkTests/Info.plist;
+				INFOPLIST_FILE = BitWakeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitHawkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitWakeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitHawk.app/Contents/MacOS/BitHawk";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitWake.app/Contents/MacOS/BitWake";
 			};
 			name = Debug;
 		};
@@ -466,12 +468,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = BitHawkTests/Info.plist;
+				INFOPLIST_FILE = BitWakeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitHawkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitWakeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitHawk.app/Contents/MacOS/BitHawk";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitWake.app/Contents/MacOS/BitWake";
 			};
 			name = Release;
 		};
@@ -480,12 +482,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = BitHawkUITests/Info.plist;
+				INFOPLIST_FILE = BitWakeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitHawkUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitWakeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = BitHawk;
+				TEST_TARGET_NAME = BitWake;
 			};
 			name = Debug;
 		};
@@ -494,19 +496,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = BitHawkUITests/Info.plist;
+				INFOPLIST_FILE = BitWakeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitHawkUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitWakeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = BitHawk;
+				TEST_TARGET_NAME = BitWake;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		859A2E701EC742F30088D8A1 /* Build configuration list for PBXProject "BitHawk" */ = {
+		859A2E701EC742F30088D8A1 /* Build configuration list for PBXProject "BitWake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				859A2E981EC742F40088D8A1 /* Debug */,
@@ -515,7 +517,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		859A2E9A1EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitHawk" */ = {
+		859A2E9A1EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitWake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				859A2E9B1EC742F40088D8A1 /* Debug */,
@@ -524,7 +526,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		859A2E9D1EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitHawkTests" */ = {
+		859A2E9D1EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitWakeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				859A2E9E1EC742F40088D8A1 /* Debug */,
@@ -533,7 +535,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		859A2EA01EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitHawkUITests" */ = {
+		859A2EA01EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitWakeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				859A2EA11EC742F40088D8A1 /* Debug */,
