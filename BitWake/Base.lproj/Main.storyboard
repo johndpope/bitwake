@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -654,7 +655,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="BitHawk" customModuleProvider="target">
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="BitWake" customModuleProvider="target">
                     <connections>
                         <outlet property="menu" destination="A48-kG-OIs" id="id0-ET-O37"/>
                         <outlet property="quitItem" destination="IRs-pM-DoH" id="psz-RX-LDh"/>
@@ -737,7 +738,7 @@
         <!--Wallet Settings View Controller-->
         <scene sceneID="VOI-6l-aUM">
             <objects>
-                <viewController id="qrq-eq-eft" customClass="BBWalletSettingsViewController" customModule="BitHawk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qrq-eq-eft" customClass="BBWalletSettingsViewController" customModule="BitWake" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="FqK-05-hcV">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="186"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -746,7 +747,7 @@
                                 <rect key="frame" x="20" y="41" width="410" height="125"/>
                                 <clipView key="contentView" id="hdp-ZC-bku">
                                     <rect key="frame" x="1" y="0.0" width="408" height="124"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" autosaveColumns="NO" rowSizeStyle="automatic" headerView="GhG-cS-Ztk" viewBased="YES" id="6Yp-L6-r7X">
                                             <rect key="frame" x="0.0" y="0.0" width="408" height="101"/>
