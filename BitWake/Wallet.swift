@@ -28,8 +28,8 @@ class Wallet: NSObject, NSCoding {
     }
     
     func encode(with aCoder: NSCoder) {
-        aCoder.setValue(self.name, forKey: kName)
-        aCoder.setValue(self.address, forKey: kAddress)
+        aCoder.encode(self.name, forKey: kName)
+        aCoder.encode(self.address, forKey: kAddress)
     }
     
     fileprivate func updateWalletsStore() {

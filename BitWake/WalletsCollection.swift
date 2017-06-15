@@ -9,23 +9,30 @@
 
 import Foundation
 
-let kStoreWalletsKey = "Wallets"
+let kWalletsCollection = "WalletsCollection"
+let kWallets = "Wallets"
 
-class WalletsCollection {
+class WalletsCollection: NSObject, NSCoding {
     static let shared = WalletsCollection()
     var wallets: [Wallet] = []
     
     // Private because it's a singleton
-    private init() {}
+    private override init() {}
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.wallets = aDecoder.decodeObject(forKey: kWallets) as! [Wallet]
+        
+        super.init()
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.wallets, forKey: kWallets)
+    }
     
     public func updateWalletsStore() {
         let userDefaults = UserDefaults.standard
-        
-        let walletsEncoded = NSKeyedArchiver.archivedData(withRootObject: self.wallets)
-        
-        userDefaults.setValue(walletsEncoded, forKey: kStoreWalletsKey)
-        
-        debugPrint(userDefaults.dictionaryRepresentation())
+        let walletsCollectionEncoded = NSKeyedArchiver.archivedData(withRootObject: self as Any)
+        userDefaults.setValue(walletsCollectionEncoded, forKey: kWalletsCollection)
     }
     
     func wallet(atIndex: Int) -> Wallet? {
