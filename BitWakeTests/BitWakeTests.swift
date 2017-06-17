@@ -1,15 +1,15 @@
 //
-//  BitHawkTests.swift
-//  BitHawkTests
+//  BitWakeTests.swift
+//  BitWakeTests
 //
 //  Created by Niklas Berglund on 2017-05-13.
 //  Copyright © 2017 Niklas Berglund. All rights reserved.
 //
 
 import XCTest
-@testable import BitHawk
+@testable import BitWake
 
-class BitHawkTests: XCTestCase {
+class BitWakeTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

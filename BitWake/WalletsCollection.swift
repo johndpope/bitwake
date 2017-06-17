@@ -1,7 +1,7 @@
 
 //
 //  Wallets.swift
-//  BitHawk
+//  BitWake
 //
 //  Created by Niklas Berglund on 2017-06-09.
 //  Copyright © 2017 Niklas Berglund. All rights reserved.

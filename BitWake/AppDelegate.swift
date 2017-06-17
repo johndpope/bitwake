@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  BitHawk
+//  BitWake
 //
 //  Created by Niklas Berglund on 2017-05-13.
 //  Copyright © 2017 Niklas Berglund. All rights reserved.
