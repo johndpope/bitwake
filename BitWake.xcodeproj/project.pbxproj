@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8514F8711EEAEF16005E5CBA /* WalletsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8514F8701EEAEF16005E5CBA /* WalletsCollection.swift */; };
 		8514F8741EEAF082005E5CBA /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8514F8731EEAF082005E5CBA /* Wallet.swift */; };
+		85690DF81EF433F50094D88A /* BitWake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85690DF71EF433F50094D88A /* BitWake.swift */; };
 		859A2E791EC742F40088D8A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E781EC742F40088D8A1 /* AppDelegate.swift */; };
 		859A2E7D1EC742F40088D8A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859A2E7C1EC742F40088D8A1 /* Assets.xcassets */; };
 		859A2E801EC742F40088D8A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859A2E7E1EC742F40088D8A1 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		8514F8701EEAEF16005E5CBA /* WalletsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsCollection.swift; sourceTree = "<group>"; };
 		8514F8731EEAF082005E5CBA /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		85690DF71EF433F50094D88A /* BitWake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitWake.swift; sourceTree = "<group>"; };
 		859A2E751EC742F40088D8A1 /* BitWake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitWake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859A2E781EC742F40088D8A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		859A2E7C1EC742F40088D8A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,13 +78,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8514F8721EEAF076005E5CBA /* models */ = {
+		8514F8721EEAF076005E5CBA /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				8514F8701EEAEF16005E5CBA /* WalletsCollection.swift */,
 				8514F8731EEAF082005E5CBA /* Wallet.swift */,
 			);
-			name = models;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		855A48F91EED701700F3D248 /* Settings */ = {
@@ -116,9 +118,10 @@
 		859A2E771EC742F40088D8A1 /* BitWake */ = {
 			isa = PBXGroup;
 			children = (
-				8514F8721EEAF076005E5CBA /* models */,
+				8514F8721EEAF076005E5CBA /* Models */,
 				855A48F91EED701700F3D248 /* Settings */,
 				859A2E781EC742F40088D8A1 /* AppDelegate.swift */,
+				85690DF71EF433F50094D88A /* BitWake.swift */,
 				859A2E7C1EC742F40088D8A1 /* Assets.xcassets */,
 				859A2E7E1EC742F40088D8A1 /* Main.storyboard */,
 				859A2E811EC742F40088D8A1 /* Info.plist */,
@@ -132,7 +135,6 @@
 				859A2E8A1EC742F40088D8A1 /* BitWakeTests.swift */,
 				859A2E8C1EC742F40088D8A1 /* Info.plist */,
 			);
-			name = BitWakeTests;
 			path = BitWakeTests;
 			sourceTree = "<group>";
 		};
@@ -142,7 +144,6 @@
 				859A2E951EC742F40088D8A1 /* BitWakeUITests.swift */,
 				859A2E971EC742F40088D8A1 /* Info.plist */,
 			);
-			name = BitWakeUITests;
 			path = BitWakeUITests;
 			sourceTree = "<group>";
 		};
@@ -282,6 +283,7 @@
 				8514F8741EEAF082005E5CBA /* Wallet.swift in Sources */,
 				8514F8711EEAEF16005E5CBA /* WalletsCollection.swift in Sources */,
 				859A2E791EC742F40088D8A1 /* AppDelegate.swift in Sources */,
+				85690DF81EF433F50094D88A /* BitWake.swift in Sources */,
 				85B9C1C81EDAD315000ABC66 /* WalletSettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,8 +22,8 @@ class Wallet: NSObject, NSCoding {
     }
     
     required convenience init?(coder aDecoder: NSCoder) {
-        let name = aDecoder.value(forKey: kName) as! String
-        let address = aDecoder.value(forKey: kAddress) as! String?
+        let name = aDecoder.decodeObject(forKey: kName) as! String
+        let address = aDecoder.decodeObject(forKey: kAddress) as! String?
         self.init(name: name, address: address)
     }
     

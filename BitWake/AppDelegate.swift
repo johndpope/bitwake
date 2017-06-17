@@ -19,6 +19,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        BitWake.ensureHaveApplicationSupportDirectory()
+        
         self.statusItem.title = "BitHawk"
         self.statusItem.menu = self.menu
         
