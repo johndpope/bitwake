@@ -56,6 +56,16 @@ class BBWalletSettingsViewController: NSViewController {
     
     @IBAction func onDidEditAddress(_ sender: NSTextField) {
         debugPrint("Edited address")
+        
+        let editedWalletIndex = self.walletsTableView.selectedRow
+        
+        guard editedWalletIndex != -1 else {
+            return
+        }
+        
+        let wallet = self.walletsCollection.wallet(atIndex: editedWalletIndex)
+        
+        wallet?.address = sender.stringValue
     }
 }
 
