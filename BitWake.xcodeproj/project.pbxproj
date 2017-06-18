@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FBA6271881F2F1BFE4C5636 /* Pods_BitWake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D41AFF234738DB21CE8242 /* Pods_BitWake.framework */; };
 		8514F8711EEAEF16005E5CBA /* WalletsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8514F8701EEAEF16005E5CBA /* WalletsCollection.swift */; };
 		8514F8741EEAF082005E5CBA /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8514F8731EEAF082005E5CBA /* Wallet.swift */; };
 		85690DF81EF433F50094D88A /* BitWake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85690DF71EF433F50094D88A /* BitWake.swift */; };
@@ -16,6 +17,8 @@
 		859A2E8B1EC742F40088D8A1 /* BitWakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E8A1EC742F40088D8A1 /* BitWakeTests.swift */; };
 		859A2E961EC742F40088D8A1 /* BitWakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E951EC742F40088D8A1 /* BitWakeUITests.swift */; };
 		85B9C1C81EDAD315000ABC66 /* WalletSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B9C1C71EDAD315000ABC66 /* WalletSettingsViewController.swift */; };
+		92FB5EF0559AAD1ACAE435B2 /* Pods_BitWakeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE71AE95078668CBCCB4188C /* Pods_BitWakeTests.framework */; };
+		951BC9549B14C2CD2F166516 /* Pods_BitWakeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B873CABABFB4A26921B75BB1 /* Pods_BitWakeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0051B7B8BAF4336447C2FBCC /* Pods-BitWakeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitWakeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitWakeUITests/Pods-BitWakeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0B05AA6438E759C37C5587F3 /* Pods-BitWake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitWake.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitWake/Pods-BitWake.release.xcconfig"; sourceTree = "<group>"; };
+		175F5F37C85BDCDE0ED54C03 /* Pods-BitWakeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitWakeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitWakeUITests/Pods-BitWakeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		84DDAB39E87F4EAC885D32D8 /* Pods-BitWakeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitWakeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitWakeTests/Pods-BitWakeTests.release.xcconfig"; sourceTree = "<group>"; };
 		8514F8701EEAEF16005E5CBA /* WalletsCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsCollection.swift; sourceTree = "<group>"; };
 		8514F8731EEAF082005E5CBA /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		85690DF71EF433F50094D88A /* BitWake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitWake.swift; sourceTree = "<group>"; };
@@ -51,6 +58,11 @@
 		859A2E951EC742F40088D8A1 /* BitWakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitWakeUITests.swift; sourceTree = "<group>"; };
 		859A2E971EC742F40088D8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85B9C1C71EDAD315000ABC66 /* WalletSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletSettingsViewController.swift; sourceTree = "<group>"; };
+		A0D41AFF234738DB21CE8242 /* Pods_BitWake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitWake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B873CABABFB4A26921B75BB1 /* Pods_BitWakeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitWakeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64E5AD188BDF8E254E2CD04 /* Pods-BitWake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitWake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitWake/Pods-BitWake.debug.xcconfig"; sourceTree = "<group>"; };
+		DE71AE95078668CBCCB4188C /* Pods_BitWakeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitWakeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4E45DFF97AE1239A67E1981 /* Pods-BitWakeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitWakeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitWakeTests/Pods-BitWakeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FBA6271881F2F1BFE4C5636 /* Pods_BitWake.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92FB5EF0559AAD1ACAE435B2 /* Pods_BitWakeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				951BC9549B14C2CD2F166516 /* Pods_BitWakeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DA86F14F5C81A119D3FA108 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D64E5AD188BDF8E254E2CD04 /* Pods-BitWake.debug.xcconfig */,
+				0B05AA6438E759C37C5587F3 /* Pods-BitWake.release.xcconfig */,
+				E4E45DFF97AE1239A67E1981 /* Pods-BitWakeTests.debug.xcconfig */,
+				84DDAB39E87F4EAC885D32D8 /* Pods-BitWakeTests.release.xcconfig */,
+				0051B7B8BAF4336447C2FBCC /* Pods-BitWakeUITests.debug.xcconfig */,
+				175F5F37C85BDCDE0ED54C03 /* Pods-BitWakeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8514F8721EEAF076005E5CBA /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +130,8 @@
 				859A2E891EC742F40088D8A1 /* BitWakeTests */,
 				859A2E941EC742F40088D8A1 /* BitWakeUITests */,
 				859A2E761EC742F40088D8A1 /* Products */,
+				4DA86F14F5C81A119D3FA108 /* Pods */,
+				BEFF3FFCEC39C3FAC28086EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +177,16 @@
 			path = BitWakeUITests;
 			sourceTree = "<group>";
 		};
+		BEFF3FFCEC39C3FAC28086EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0D41AFF234738DB21CE8242 /* Pods_BitWake.framework */,
+				DE71AE95078668CBCCB4188C /* Pods_BitWakeTests.framework */,
+				B873CABABFB4A26921B75BB1 /* Pods_BitWakeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 859A2E9A1EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitWake" */;
 			buildPhases = (
+				38B4B8E0F66B5C4A766E6B06 /* [CP] Check Pods Manifest.lock */,
 				859A2E711EC742F40088D8A1 /* Sources */,
 				859A2E721EC742F40088D8A1 /* Frameworks */,
 				859A2E731EC742F40088D8A1 /* Resources */,
+				7212685A860AF67B0516AAD2 /* [CP] Embed Pods Frameworks */,
+				08E44F65EB98E67ADBB2ADAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 859A2E9D1EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitWakeTests" */;
 			buildPhases = (
+				109948D154DF60B77BE86D61 /* [CP] Check Pods Manifest.lock */,
 				859A2E821EC742F40088D8A1 /* Sources */,
 				859A2E831EC742F40088D8A1 /* Frameworks */,
 				859A2E841EC742F40088D8A1 /* Resources */,
+				3A98748532E309BC7C53C8F3 /* [CP] Embed Pods Frameworks */,
+				C07F795ED79FB396823BAC1B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 859A2EA01EC742F40088D8A1 /* Build configuration list for PBXNativeTarget "BitWakeUITests" */;
 			buildPhases = (
+				9D8CA3FD5B30C57A9E00C5BE /* [CP] Check Pods Manifest.lock */,
 				859A2E8D1EC742F40088D8A1 /* Sources */,
 				859A2E8E1EC742F40088D8A1 /* Frameworks */,
 				859A2E8F1EC742F40088D8A1 /* Resources */,
+				5225856B65021B4474ABB8BC /* [CP] Embed Pods Frameworks */,
+				B03BD9A5D0B075224886D25B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,6 +323,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08E44F65EB98E67ADBB2ADAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitWake/Pods-BitWake-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		109948D154DF60B77BE86D61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		38B4B8E0F66B5C4A766E6B06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3A98748532E309BC7C53C8F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitWakeTests/Pods-BitWakeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5225856B65021B4474ABB8BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitWakeUITests/Pods-BitWakeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7212685A860AF67B0516AAD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitWake/Pods-BitWake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D8CA3FD5B30C57A9E00C5BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B03BD9A5D0B075224886D25B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitWakeUITests/Pods-BitWakeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C07F795ED79FB396823BAC1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitWakeTests/Pods-BitWakeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		859A2E711EC742F40088D8A1 /* Sources */ = {
@@ -425,6 +612,7 @@
 		};
 		859A2E9B1EC742F40088D8A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D64E5AD188BDF8E254E2CD04 /* Pods-BitWake.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -438,6 +626,7 @@
 		};
 		859A2E9C1EC742F40088D8A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B05AA6438E759C37C5587F3 /* Pods-BitWake.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -451,6 +640,7 @@
 		};
 		859A2E9E1EC742F40088D8A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4E45DFF97AE1239A67E1981 /* Pods-BitWakeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +656,7 @@
 		};
 		859A2E9F1EC742F40088D8A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84DDAB39E87F4EAC885D32D8 /* Pods-BitWakeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -481,6 +672,7 @@
 		};
 		859A2EA11EC742F40088D8A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0051B7B8BAF4336447C2FBCC /* Pods-BitWakeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -495,6 +687,7 @@
 		};
 		859A2EA21EC742F40088D8A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 175F5F37C85BDCDE0ED54C03 /* Pods-BitWakeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
