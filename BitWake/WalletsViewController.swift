@@ -33,13 +33,17 @@ extension WalletsViewController: NSCollectionViewDataSource {
     }
     
     public func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return WalletsCollection.shared.count
     }
     
     public func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
-        let item = self.collectionView.makeItem(withIdentifier: "WalletCollectionViewItem", for: indexPath)
+        let collectionViewItem = self.collectionView.makeItem(withIdentifier: "WalletCollectionViewItem", for: indexPath) as! WalletCollectionViewItem
         
-        return item
+        if let wallet = WalletsCollection.shared.wallet(atIndex: indexPath.item) {
+            collectionViewItem.wallet = wallet
+        }
+        
+        return collectionViewItem
     }
     
     public func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> NSView {

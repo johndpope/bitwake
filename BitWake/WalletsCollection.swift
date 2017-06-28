@@ -17,6 +17,12 @@ class WalletsCollection: NSObject {
     
     var wallets: [Wallet] = []
     
+    var count: Int {
+        get {
+            return self.wallets.count
+        }
+    }
+    
     
     // Private because it's a singleton
     private override init() {
