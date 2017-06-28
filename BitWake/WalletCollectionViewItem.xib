@@ -35,12 +35,22 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foB-uA-JTJ">
+                    <rect key="frame" x="150" y="16" width="42" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0 BTC" id="4x9-Lb-UDd">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
             <constraints>
                 <constraint firstItem="aif-yc-Zen" firstAttribute="top" secondItem="MMh-6C-2dU" secondAttribute="bottom" constant="1" id="5jV-wY-Ncd"/>
                 <constraint firstItem="MMh-6C-2dU" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="YB2-MH-JoM"/>
+                <constraint firstItem="foB-uA-JTJ" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="az7-2V-syZ"/>
                 <constraint firstItem="MMh-6C-2dU" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="bsM-pS-DaH"/>
                 <constraint firstItem="aif-yc-Zen" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="s5h-FW-Ni8"/>
+                <constraint firstAttribute="trailing" secondItem="foB-uA-JTJ" secondAttribute="trailing" constant="10" id="yvc-q8-PKw"/>
             </constraints>
         </customView>
         <collectionViewItem id="xG6-2e-YWX" customClass="WalletCollectionViewItem" customModule="BitWake" customModuleProvider="target">
