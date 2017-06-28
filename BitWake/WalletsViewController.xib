@@ -19,13 +19,13 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXX-aL-KYc">
-                    <rect key="frame" x="10" y="10" width="250" height="130"/>
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="150"/>
                     <clipView key="contentView" drawsBackground="NO" id="WYw-M9-If8">
-                        <rect key="frame" x="1" y="1" width="248" height="128"/>
+                        <rect key="frame" x="1" y="1" width="268" height="148"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView id="bgJ-xn-Tia">
-                                <rect key="frame" x="0.0" y="0.0" width="248" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="268" height="148"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="Tv3-2S-Wo4">
                                     <size key="itemSize" width="50" height="50"/>
@@ -49,10 +49,10 @@
                 </scrollView>
             </subviews>
             <constraints>
-                <constraint firstItem="zXX-aL-KYc" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="Cd6-Kk-nlZ"/>
-                <constraint firstAttribute="bottom" secondItem="zXX-aL-KYc" secondAttribute="bottom" constant="10" id="RHy-s8-Hcv"/>
-                <constraint firstAttribute="trailing" secondItem="zXX-aL-KYc" secondAttribute="trailing" constant="10" id="TK8-se-8lL"/>
-                <constraint firstItem="zXX-aL-KYc" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="yF0-H9-1xp"/>
+                <constraint firstItem="zXX-aL-KYc" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Cd6-Kk-nlZ"/>
+                <constraint firstAttribute="bottom" secondItem="zXX-aL-KYc" secondAttribute="bottom" id="RHy-s8-Hcv"/>
+                <constraint firstAttribute="trailing" secondItem="zXX-aL-KYc" secondAttribute="trailing" id="TK8-se-8lL"/>
+                <constraint firstItem="zXX-aL-KYc" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="yF0-H9-1xp"/>
             </constraints>
             <point key="canvasLocation" x="34" y="106"/>
         </customView>
