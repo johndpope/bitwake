@@ -16,6 +16,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var quitItem: NSMenuItem!
     
     var settingsWindow: NSWindowController?
+    
+    var walletsViewController: WalletsViewController?
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -23,6 +25,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         self.statusItem.title = "BitWake"
         self.statusItem.menu = self.menu
+        
+        self.walletsViewController = WalletsViewController(nibName: "WalletsViewController", bundle: nil)
+        let walletsMenuItem = NSMenuItem(title: "Custom view", action: nil, keyEquivalent: "")
+        walletsMenuItem.view = walletsViewController?.view
+        self.menu.insertItem(walletsMenuItem, at: 0)
         
         self.settingsClicked(self)
     }
