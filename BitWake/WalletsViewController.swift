@@ -23,7 +23,7 @@ class WalletsViewController: NSViewController {
         collectionView.collectionViewLayout = WalletsListLayout()
         collectionView.register(WalletCollectionViewItem.self, forItemWithIdentifier: "WalletCollectionViewItem")
         view.wantsLayer = true
-        collectionView.layer?.backgroundColor = NSColor.black.cgColor
+        //collectionView.layer?.backgroundColor = NSColor.black.cgColor
     }
 }
 

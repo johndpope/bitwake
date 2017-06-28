@@ -18,7 +18,7 @@ class WalletCollectionViewItem: NSCollectionViewItem {
         self.nameTextField.stringValue = "Name here"
         self.addressTextField.stringValue = "Address here"
         self.view.wantsLayer = true
-        self.view.layer?.backgroundColor = NSColor.blue.cgColor
+        self.view.layer?.backgroundColor = NSColor.white.cgColor
     }
     
 }
