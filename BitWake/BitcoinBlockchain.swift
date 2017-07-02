@@ -47,6 +47,29 @@ class BitcoinBlockchain {
     }
     
     /**
+     * Check current balance of Bitcoin wallet
+     */
+    public func balance(wallet: Wallet, onCompletion: @escaping (Double) -> Void) {
+        let address = wallet.address
+        let url = URL(string: "https://blockchain.info/q/addressbalance/" + address!)
+        
+        let dataTask = URLSession.shared.dataTask(with: url!) { data, response, error in
+            let dataString = String(data: data!, encoding: String.Encoding.utf8)
+            let satoshiBalance = Int(dataString!)
+            
+            guard satoshiBalance != nil else {
+                // TODO: Error handling
+                return
+            }
+            
+            let btcBalance = Double(Double(satoshiBalance!)/100000000.0)
+            onCompletion(btcBalance)
+        }
+        
+        dataTask.resume()
+    }
+    
+    /**
      * Triggers API to send info about latest transaction.
      */
     fileprivate func debugTriggerLastTransactionInfo() {

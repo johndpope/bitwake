@@ -13,6 +13,9 @@ class Blockchain {
     
     init() {
         self.subscribeBitcoinWallets()
+        bitcoinBlockchain.balance(wallet: Wallet(name: "", address: "1JCe8z4jJVNXSjohjM4i9Hh813dLCNx2Sy")) { (btcBalance) in
+            debugPrint(btcBalance)
+        }
     }
     
     private func subscribeBitcoinWallets() {
