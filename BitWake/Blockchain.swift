@@ -12,6 +12,12 @@ class Blockchain {
     private var bitcoinBlockchain = BitcoinBlockchain()
     
     init() {
-        
+        self.subscribeBitcoinWallets()
+    }
+    
+    private func subscribeBitcoinWallets() {
+        for wallet in WalletsCollection.shared.wallets {
+            self.bitcoinBlockchain.subscribe(wallet)
+        }
     }
 }

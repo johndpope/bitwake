@@ -30,6 +30,21 @@ class BitcoinBlockchain {
         debugPrint("Ping")
         self.socket.write(string: "{\"op\":\"ping\"}")
     }
+    
+    public func subscribe(_ wallet: Wallet) {
+        if let address = wallet.address {
+            let jsonDict = ["op": "addr_sub", "addr": address]
+            debugPrint("Subscribing to wallet \(address)")
+            
+            do {
+                let jsonData = try JSONSerialization.data(withJSONObject: jsonDict, options: .prettyPrinted)
+                self.socket.write(data: jsonData)
+            }
+            catch let error {
+                debugPrint(error)
+            }
+        }
+    }
 }
 
 extension BitcoinBlockchain: WebSocketDelegate {
