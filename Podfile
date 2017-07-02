@@ -4,8 +4,8 @@
 target 'BitWake' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for BitWake
+  
+  pod 'Starscream', '~> 2.0'
 
   target 'BitWakeTests' do
     inherit! :search_paths
@@ -16,5 +16,4 @@ target 'BitWake' do
     inherit! :search_paths
     # Pods for testing
   end
-
 end
