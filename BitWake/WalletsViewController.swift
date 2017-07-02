@@ -25,6 +25,11 @@ class WalletsViewController: NSViewController {
         view.wantsLayer = true
         //collectionView.layer?.backgroundColor = NSColor.black.cgColor
     }
+    
+    fileprivate func setHeight(_ height: CGFloat) {
+        self.view.frame.size.height = height
+        self.view.needsLayout = true
+    }
 }
 
 extension WalletsViewController: NSCollectionViewDataSource {
