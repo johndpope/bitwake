@@ -23,6 +23,25 @@ class BitcoinBlockchain {
         }
     }
     
+    fileprivate func transactionFromJsonResponse(_ jsonResponse: [String: Any]) {
+        let transactionId = jsonResponse["hash"] as! String
+        let outs = jsonResponse["out"] as! [[String: Any]]
+        
+        let transaction = Transaction(transactionId: transactionId)
+        
+        for out in outs {
+            let toAddress = out["addr"] as! String
+            let value = out["value"] as! Float?
+            
+            if value != nil {
+                transaction.addOut(address: toAddress, amount: value!)
+            }
+            debugPrint(out)
+        }
+        
+        debugPrint("")
+    }
+    
     /**
      * Triggers API to send info about latest transaction.
      */
@@ -77,6 +96,8 @@ extension BitcoinBlockchain: WebSocketDelegate {
                 
                 if operation == "utx" {
                     debugPrint(jsonDict["x"] as! [String: Any])
+                    let transactionJsonDict = jsonDict["x"] as! [String: Any]
+                    let transaction = self.transactionFromJsonResponse(transactionJsonDict)
                 }
             }
         }

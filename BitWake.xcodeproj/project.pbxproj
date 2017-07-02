@@ -14,6 +14,7 @@
 		8555F8CA1F03D7D200F55C22 /* WalletsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8555F8C81F03D7D200F55C22 /* WalletsViewController.xib */; };
 		8555F8CE1F08E25F00F55C22 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8555F8CD1F08E25F00F55C22 /* Blockchain.swift */; };
 		8555F8D01F08E33200F55C22 /* BitcoinBlockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8555F8CF1F08E33200F55C22 /* BitcoinBlockchain.swift */; };
+		8555F8D21F08F8BE00F55C22 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8555F8D11F08F8BE00F55C22 /* Transaction.swift */; };
 		85690DF81EF433F50094D88A /* BitWake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85690DF71EF433F50094D88A /* BitWake.swift */; };
 		85690E021EF59B4F0094D88A /* WalletCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85690E001EF59B4F0094D88A /* WalletCollectionViewItem.swift */; };
 		85690E031EF59B4F0094D88A /* WalletCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85690E011EF59B4F0094D88A /* WalletCollectionViewItem.xib */; };
@@ -56,6 +57,7 @@
 		8555F8C81F03D7D200F55C22 /* WalletsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletsViewController.xib; sourceTree = "<group>"; };
 		8555F8CD1F08E25F00F55C22 /* Blockchain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
 		8555F8CF1F08E33200F55C22 /* BitcoinBlockchain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinBlockchain.swift; sourceTree = "<group>"; };
+		8555F8D11F08F8BE00F55C22 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		85690DF71EF433F50094D88A /* BitWake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitWake.swift; sourceTree = "<group>"; };
 		85690E001EF59B4F0094D88A /* WalletCollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletCollectionViewItem.swift; sourceTree = "<group>"; };
 		85690E011EF59B4F0094D88A /* WalletCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletCollectionViewItem.xib; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				8514F8701EEAEF16005E5CBA /* WalletsCollection.swift */,
 				8514F8731EEAF082005E5CBA /* Wallet.swift */,
+				8555F8D11F08F8BE00F55C22 /* Transaction.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8555F8D21F08F8BE00F55C22 /* Transaction.swift in Sources */,
 				85690E051EF65DA00094D88A /* WalletsListLayout.swift in Sources */,
 				8514F8741EEAF082005E5CBA /* Wallet.swift in Sources */,
 				8555F8CE1F08E25F00F55C22 /* Blockchain.swift in Sources */,
