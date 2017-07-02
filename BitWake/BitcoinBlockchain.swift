@@ -9,22 +9,22 @@
 import Foundation
 import Starscream
 
-class BitcoinBlockchain: NSObject {
+class BitcoinBlockchain {
     fileprivate var socket = WebSocket(url: URL(string: "wss://ws.blockchain.info/inv")!)
     
-    override init() {
-        super.init()
-        
+    init() {        
         self.socket.delegate = self
         self.socket.connect()
         
-        Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(sendPing), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(withTimeInterval: 20, repeats: true) { (timer) in
+            self.sendPing()
+        }
     }
     
     /**
      * Sends ping to keep the websocket alive.
      */
-    public func sendPing() {
+    private func sendPing() {
         debugPrint("Ping")
         self.socket.write(string: "{\"op\":\"ping\"}")
     }
@@ -41,6 +41,7 @@ extension BitcoinBlockchain: WebSocketDelegate {
     
     func websocketDidReceiveMessage(socket: WebSocket, text: String) {
         debugPrint("websocketDidReceiveMessage")
+        debugPrint("\(text)")
     }
     
     func websocketDidReceiveData(socket: WebSocket, data: Data) {
