@@ -30,6 +30,10 @@ class BitcoinBlockchain {
         let transaction = Transaction(transactionId: transactionId)
         
         for out in outs {
+            guard out["addr"] != nil && out["value"] != nil else {
+                continue
+            }
+            
             let toAddress = out["addr"] as! String
             let value = out["value"] as! Float?
             
