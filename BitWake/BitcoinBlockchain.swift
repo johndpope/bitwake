@@ -68,6 +68,21 @@ extension BitcoinBlockchain: WebSocketDelegate {
     func websocketDidReceiveMessage(socket: WebSocket, text: String) {
         debugPrint("websocketDidReceiveMessage")
         debugPrint("\(text)")
+        
+        do {
+            let jsonDict = try JSONSerialization.jsonObject(with: text.data(using: .utf8)!, options: .allowFragments) as! [String: Any]
+            debugPrint(jsonDict)
+            
+            if let operation = jsonDict["op"] as! String? {
+                
+                if operation == "utx" {
+                    debugPrint(jsonDict["x"] as! [String: Any])
+                }
+            }
+        }
+        catch let error {
+            debugPrint(error)
+        }
     }
     
     func websocketDidReceiveData(socket: WebSocket, data: Data) {
