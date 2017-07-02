@@ -24,6 +24,13 @@ class BitcoinBlockchain {
     }
     
     /**
+     * Triggers API to send info about latest transaction.
+     */
+    fileprivate func debugTriggerLastTransactionInfo() {
+        self.socket.write(string: "{\"op\":\"ping_tx\"}")
+    }
+    
+    /**
      * Sends ping to keep the websocket alive.
      */
     private func sendPing() {
@@ -50,6 +57,8 @@ class BitcoinBlockchain {
 extension BitcoinBlockchain: WebSocketDelegate {
     func websocketDidConnect(socket: WebSocket) {
         debugPrint("websocketDidConnect")
+        
+        self.debugTriggerLastTransactionInfo()
     }
     
     func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
