@@ -125,6 +125,7 @@ extension BitcoinBlockchain: WebSocketDelegate {
                     debugPrint(jsonDict["x"] as! [String: Any])
                     let transactionJsonDict = jsonDict["x"] as! [String: Any]
                     let transaction = self.transactionFromJsonResponse(transactionJsonDict)
+                    debugPrint(transaction)
                 }
             }
         }
