@@ -12,10 +12,12 @@ import Starscream
 class BitcoinBlockchain {
     fileprivate var socket = WebSocket(url: URL(string: "wss://ws.blockchain.info/inv")!)
     
-    init() {        
+    init() {
         self.socket.delegate = self
         self.socket.connect()
         
+        // API specifies that ping must be sent in order to keep the connection alive:
+        // "If you do not need any data, but want to keep it open, you should send a ping every 30 seconds"
         Timer.scheduledTimer(withTimeInterval: 20, repeats: true) { (timer) in
             self.sendPing()
         }
