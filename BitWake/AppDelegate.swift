@@ -18,6 +18,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var settingsWindow: NSWindowController?
     
     var walletsViewController: WalletsViewController?
+    
+    private var blockchain = Blockchain()
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
