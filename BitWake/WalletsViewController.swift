@@ -17,6 +17,8 @@ class WalletsViewController: NSViewController {
         super.viewDidLoad()
         
         self.configureCollectionView()
+        
+        self.updateHeight()
     }
     
     private func configureCollectionView() {
@@ -24,6 +26,16 @@ class WalletsViewController: NSViewController {
         collectionView.register(WalletCollectionViewItem.self, forItemWithIdentifier: "WalletCollectionViewItem")
         view.wantsLayer = true
         //collectionView.layer?.backgroundColor = NSColor.black.cgColor
+    }
+    
+    /**
+     * Update height to fit wallets
+     */
+    public func updateHeight() {
+        let numberOfWallets = WalletsCollection.shared.count
+        let height: CGFloat = CGFloat(numberOfWallets) * WalletCollectionViewItem.size.height
+        
+        self.setHeight(height)
     }
     
     fileprivate func setHeight(_ height: CGFloat) {

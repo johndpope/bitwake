@@ -12,6 +12,8 @@ class WalletCollectionViewItem: NSCollectionViewItem {
     @IBOutlet weak var nameTextField: NSTextField!
     @IBOutlet weak var addressTextField: NSTextField!
     
+    public static let size = CGSize(width: 123.00, height: 50.0)
+    
     override init?(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
