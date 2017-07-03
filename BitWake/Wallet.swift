@@ -20,6 +20,8 @@ class Wallet: NSObject, NSCoding {
     init(name: String, address: String?) {
         self.name = name
         self.address = address
+        
+        super.init()
     }
     
     required convenience init?(coder aDecoder: NSCoder) {
