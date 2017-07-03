@@ -23,4 +23,13 @@ class Blockchain {
             self.bitcoinBlockchain.subscribe(wallet)
         }
     }
+    
+    public func checkBalance(wallet: Wallet, onCompletion: @escaping (Double) -> Void) {
+        switch wallet.walletType {
+        case .BTC:
+            self.bitcoinBlockchain.balance(wallet: wallet) { (balance) in
+                onCompletion(balance)
+            }
+        }
+    }
 }
