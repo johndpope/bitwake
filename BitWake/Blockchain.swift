@@ -9,6 +9,7 @@
 import Foundation
 
 class Blockchain {
+    public static var shared = Blockchain()
     private var bitcoinBlockchain = BitcoinBlockchain()
     
     init() {
