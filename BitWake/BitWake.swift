@@ -11,6 +11,10 @@ import Foundation
 let kUserDefaultsSuiteName = "com.bitwake"
 let kWalletsFileName = "walletsCollectionStore"
 
+enum Cryptocurrency {
+    case BTC
+}
+
 public class BitWake {
     public static func ensureHaveApplicationSupportDirectory() {
         let applicationSupportUrl = BitWake.applicationSupportUrl()
