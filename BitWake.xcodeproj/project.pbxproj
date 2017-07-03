@@ -19,6 +19,7 @@
 		85690E021EF59B4F0094D88A /* WalletCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85690E001EF59B4F0094D88A /* WalletCollectionViewItem.swift */; };
 		85690E031EF59B4F0094D88A /* WalletCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85690E011EF59B4F0094D88A /* WalletCollectionViewItem.xib */; };
 		85690E051EF65DA00094D88A /* WalletsListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85690E041EF65DA00094D88A /* WalletsListLayout.swift */; };
+		85856DDE1F0A89640084A372 /* TransactionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85856DDD1F0A89640084A372 /* TransactionCenter.swift */; };
 		859A2E791EC742F40088D8A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E781EC742F40088D8A1 /* AppDelegate.swift */; };
 		859A2E7D1EC742F40088D8A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859A2E7C1EC742F40088D8A1 /* Assets.xcassets */; };
 		859A2E801EC742F40088D8A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859A2E7E1EC742F40088D8A1 /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		85690E001EF59B4F0094D88A /* WalletCollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletCollectionViewItem.swift; sourceTree = "<group>"; };
 		85690E011EF59B4F0094D88A /* WalletCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletCollectionViewItem.xib; sourceTree = "<group>"; };
 		85690E041EF65DA00094D88A /* WalletsListLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsListLayout.swift; sourceTree = "<group>"; };
+		85856DDD1F0A89640084A372 /* TransactionCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCenter.swift; sourceTree = "<group>"; };
 		859A2E751EC742F40088D8A1 /* BitWake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitWake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859A2E781EC742F40088D8A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		859A2E7C1EC742F40088D8A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				8555F8CD1F08E25F00F55C22 /* Blockchain.swift */,
 				8555F8CF1F08E33200F55C22 /* BitcoinBlockchain.swift */,
+				85856DDD1F0A89640084A372 /* TransactionCenter.swift */,
 			);
 			name = Blockchain;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				8514F8741EEAF082005E5CBA /* Wallet.swift in Sources */,
 				8555F8CE1F08E25F00F55C22 /* Blockchain.swift in Sources */,
 				8514F8711EEAEF16005E5CBA /* WalletsCollection.swift in Sources */,
+				85856DDE1F0A89640084A372 /* TransactionCenter.swift in Sources */,
 				859A2E791EC742F40088D8A1 /* AppDelegate.swift in Sources */,
 				85690E021EF59B4F0094D88A /* WalletCollectionViewItem.swift in Sources */,
 				8555F8D01F08E33200F55C22 /* BitcoinBlockchain.swift in Sources */,
