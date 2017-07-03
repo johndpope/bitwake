@@ -15,7 +15,7 @@ class Wallet: NSObject, NSCoding {
     var name: String { didSet { self.updateWalletsStore() } }
     var address: String? { didSet { self.updateWalletsStore() } }
     var balance: Double?
-    var walletType: Cryptocurrency = .BTC // BTC only at the moment
+    var type: Cryptocurrency = .BTC // BTC only at the moment
     
     init(name: String, address: String?) {
         self.name = name

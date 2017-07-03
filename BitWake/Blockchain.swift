@@ -25,7 +25,7 @@ class Blockchain {
     }
     
     public func checkBalance(wallet: Wallet, onCompletion: @escaping (Double) -> Void) {
-        switch wallet.walletType {
+        switch wallet.type {
         case .BTC:
             self.bitcoinBlockchain.checkBalance(wallet: wallet) { (balance) in
                 onCompletion(balance)
