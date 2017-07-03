@@ -49,7 +49,7 @@ class BitcoinBlockchain {
     /**
      * Check current balance of Bitcoin wallet
      */
-    public func balance(wallet: Wallet, onCompletion: @escaping (Double) -> Void) {
+    public func checkBalance(wallet: Wallet, onCompletion: @escaping (Double) -> Void) {
         let address = wallet.address
         let url = URL(string: "https://blockchain.info/q/addressbalance/" + address!)
         
