@@ -740,12 +740,12 @@
             <objects>
                 <viewController id="qrq-eq-eft" customClass="BBWalletSettingsViewController" customModule="BitWake" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="FqK-05-hcV">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="186"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="185"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaL-jy-4ai">
-                                <rect key="frame" x="20" y="41" width="410" height="125"/>
-                                <clipView key="contentView" id="hdp-ZC-bku">
+                            <scrollView wantsLayer="YES" ambiguous="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaL-jy-4ai">
+                                <rect key="frame" x="20" y="40" width="410" height="125"/>
+                                <clipView key="contentView" ambiguous="YES" id="hdp-ZC-bku">
                                     <rect key="frame" x="1" y="0.0" width="408" height="124"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -871,9 +871,6 @@
                                         </tableView>
                                     </subviews>
                                 </clipView>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="GD8-r4-7ey"/>
-                                </constraints>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="cyn-dU-L42">
                                     <rect key="frame" x="1" y="108" width="408" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
@@ -888,7 +885,7 @@
                                 </tableHeaderView>
                             </scrollView>
                             <segmentedControl focusRingType="none" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AqF-Om-GwK">
-                                <rect key="frame" x="20" y="19" width="67" height="21"/>
+                                <rect key="frame" x="20" y="19" width="67" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="67" id="ZhH-WK-Mov"/>
                                 </constraints>
@@ -920,7 +917,9 @@
                             <constraint firstItem="IXU-Fj-qUj" firstAttribute="leading" secondItem="AqF-Om-GwK" secondAttribute="trailing" constant="-1" identifier="square leading" id="56c-bp-saW"/>
                             <constraint firstItem="IXU-Fj-qUj" firstAttribute="top" secondItem="AqF-Om-GwK" secondAttribute="top" constant="-1" identifier="square top" id="6V3-sG-KLZ"/>
                             <constraint firstAttribute="trailing" secondItem="IXU-Fj-qUj" secondAttribute="trailing" constant="20" identifier="square trailing" id="P3P-dR-ek3"/>
-                            <constraint firstItem="AqF-Om-GwK" firstAttribute="top" secondItem="ZaL-jy-4ai" secondAttribute="bottom" id="QNw-Om-tIT"/>
+                            <constraint firstItem="AqF-Om-GwK" firstAttribute="top" secondItem="ZaL-jy-4ai" secondAttribute="bottom" constant="-1" id="QNw-Om-tIT"/>
+                            <constraint firstAttribute="bottom" secondItem="IXU-Fj-qUj" secondAttribute="bottom" constant="20" id="bn1-FF-KI7"/>
+                            <constraint firstAttribute="bottom" secondItem="AqF-Om-GwK" secondAttribute="bottom" constant="20" id="fFT-yc-Vel"/>
                             <constraint firstAttribute="trailing" secondItem="ZaL-jy-4ai" secondAttribute="trailing" constant="20" id="ibJ-fy-iUP"/>
                             <constraint firstItem="ZaL-jy-4ai" firstAttribute="leading" secondItem="FqK-05-hcV" secondAttribute="leading" constant="20" id="m21-FF-Nt4"/>
                             <constraint firstItem="AqF-Om-GwK" firstAttribute="leading" secondItem="6Yp-L6-r7X" secondAttribute="leading" constant="-1" id="z36-av-tXW"/>
@@ -934,7 +933,7 @@
                 </viewController>
                 <customObject id="mxa-zh-LvT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1426" y="732"/>
+            <point key="canvasLocation" x="1426" y="731.5"/>
         </scene>
     </scenes>
     <resources>
