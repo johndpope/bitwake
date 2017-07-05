@@ -11,6 +11,7 @@ import Cocoa
 class WalletCollectionViewItem: NSCollectionViewItem {
     @IBOutlet weak var nameTextField: NSTextField!
     @IBOutlet weak var addressTextField: NSTextField!
+    @IBOutlet weak var balanceTextField: NSTextField!
     
     public static let size = CGSize(width: 123.00, height: 50.0)
     
@@ -32,6 +33,25 @@ class WalletCollectionViewItem: NSCollectionViewItem {
             else {
                 self.addressTextField.stringValue = ""
             }
+            
+            if let balance = wallet!.balance {
+                self.balanceTextField.stringValue = "\(balance) BTC"
+            }
+        }
+    }
+    
+    fileprivate func updateLabels() {
+        self.nameTextField.stringValue = wallet!.name
+        
+        if let address = wallet!.address {
+            self.addressTextField.stringValue = address
+        }
+        else {
+            self.addressTextField.stringValue = ""
+        }
+        
+        if let balance = wallet!.balance {
+            self.balanceTextField.stringValue = "\(balance) BTC"
         }
     }
 
@@ -44,5 +64,10 @@ class WalletCollectionViewItem: NSCollectionViewItem {
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = NSColor.white.cgColor
     }
-    
+}
+
+extension WalletCollectionViewItem: WalletDelegate {
+    func walletWasUpdated() {
+        self.updateLabels()
+    }
 }

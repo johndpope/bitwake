@@ -11,11 +11,16 @@ import Foundation
 let kName = "name"
 let kAddress = "address"
 
+protocol WalletDelegate {
+    func walletWasUpdated()
+}
+
 class Wallet: NSObject, NSCoding {
     var name: String { didSet { self.updateWalletsStore() } }
     var address: String? { didSet { self.updateWalletsStore() } }
-    var balance: Double?
+    var balance: Double? { didSet { self.delegate?.walletWasUpdated() } }
     var type: Cryptocurrency = .BTC // BTC only at the moment
+    var delegate: WalletDelegate?
     
     init(name: String, address: String?) {
         self.name = name
@@ -33,6 +38,12 @@ class Wallet: NSObject, NSCoding {
     func encode(with aCoder: NSCoder) {
         aCoder.encode(self.name, forKey: kName)
         aCoder.encode(self.address, forKey: kAddress)
+    }
+    
+    public func getBalance() {        
+        Blockchain.shared.checkBalance(wallet: self) { (balance) in
+            self.balance = balance
+        }
     }
     
     fileprivate func updateWalletsStore() {

@@ -9,14 +9,14 @@
 import Foundation
 
 class Blockchain {
-    public static var shared = Blockchain()
+    public static let shared: Blockchain = Blockchain()
     private var bitcoinBlockchain = BitcoinBlockchain()
     
-    init() {
+    private init() {
         self.subscribeBitcoinWallets()
-        bitcoinBlockchain.checkBalance(wallet: Wallet(name: "", address: "1JCe8z4jJVNXSjohjM4i9Hh813dLCNx2Sy")) { (btcBalance) in
+        /*self.bitcoinBlockchain.checkBalance(wallet: Wallet(name: "", address: "1JCe8z4jJVNXSjohjM4i9Hh813dLCNx2Sy")) { (btcBalance) in
             debugPrint(btcBalance)
-        }
+        }*/
     }
     
     private func subscribeBitcoinWallets() {

@@ -16,10 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var quitItem: NSMenuItem!
     
     var settingsWindow: NSWindowController?
-    
     var walletsViewController: WalletsViewController?
-    
-    private var blockchain = Blockchain()
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {

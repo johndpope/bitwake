@@ -34,16 +34,10 @@ class BitcoinBlockchain {
                 continue
             }
             
-            let toAddress = out["addr"] as! String
-            let value = out["value"] as! Float?
-            
-            if value != nil {
-                transaction.addOut(address: toAddress, amount: value!)
+            if let toAddress = out["addr"] as? String, let value = out["value"] as? Float {
+                transaction.addOut(address: toAddress, amount: value)
             }
-            debugPrint(out)
         }
-        
-        debugPrint("")
     }
     
     /**

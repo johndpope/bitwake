@@ -19,6 +19,8 @@ class WalletsViewController: NSViewController {
         self.configureCollectionView()
         
         self.updateHeight()
+        
+        WalletsCollection.shared.getBalances()
     }
     
     private func configureCollectionView() {

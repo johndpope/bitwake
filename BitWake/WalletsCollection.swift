@@ -13,7 +13,7 @@ let kWalletsCollection = "WalletsCollection"
 let kWallets: String = "Wallets"
 
 class WalletsCollection: NSObject {
-    static var shared = WalletsCollection()
+    public static let shared: WalletsCollection = WalletsCollection()
     
     var wallets: [Wallet] = []
     
@@ -59,5 +59,14 @@ class WalletsCollection: NSObject {
     
     func remove(walletIndex: Int) {
         self.wallets.remove(at: walletIndex)
+    }
+    
+    /**
+     * Update balance of all Wallet models with current balance.
+     */
+    func getBalances() {
+        for wallet in self.wallets {
+            wallet.getBalance()
+        }
     }
 }

@@ -9,6 +9,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="WalletCollectionViewItem" customModule="BitWake" customModuleProvider="target">
             <connections>
                 <outlet property="addressTextField" destination="aif-yc-Zen" id="Oc8-9C-XKP"/>
+                <outlet property="balanceTextField" destination="foB-uA-JTJ" id="fOO-ga-Bm1"/>
                 <outlet property="nameTextField" destination="MMh-6C-2dU" id="95W-GM-IsE"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>

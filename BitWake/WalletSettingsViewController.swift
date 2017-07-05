@@ -18,7 +18,7 @@ class BBWalletSettingsViewController: NSViewController {
     @IBOutlet weak var walletsTableView: NSTableView!
     @IBOutlet weak var addRemoveSegmentedControl: NSSegmentedControl!
     
-    fileprivate var walletsCollection = WalletsCollection.shared
+    //fileprivate var walletsCollection = WalletsCollection.shared
     
     override func viewDidLoad() {
         walletsTableView.delegate = self
@@ -29,7 +29,7 @@ class BBWalletSettingsViewController: NSViewController {
         if sender.selectedSegment == 0 { // Add button
             // Create empty wallet model
             let newWallet = Wallet(name: "", address: nil)
-            self.walletsCollection.add(newWallet)
+            WalletsCollection.shared.add(newWallet)
             
             let numberOfRows = self.walletsTableView.numberOfRows
             self.walletsTableView.insertRows(at: IndexSet(integer: numberOfRows), withAnimation: NSTableViewAnimationOptions.slideDown)
@@ -49,7 +49,7 @@ class BBWalletSettingsViewController: NSViewController {
             return
         }
         
-        let wallet = self.walletsCollection.wallet(atIndex: editedWalletIndex)
+        let wallet = WalletsCollection.shared.wallet(atIndex: editedWalletIndex)
         
         wallet?.name = sender.stringValue
     }
@@ -63,7 +63,7 @@ class BBWalletSettingsViewController: NSViewController {
             return
         }
         
-        let wallet = self.walletsCollection.wallet(atIndex: editedWalletIndex)
+        let wallet = WalletsCollection.shared.wallet(atIndex: editedWalletIndex)
         
         wallet?.address = sender.stringValue
     }
@@ -71,7 +71,7 @@ class BBWalletSettingsViewController: NSViewController {
 
 extension BBWalletSettingsViewController: NSTableViewDelegate {
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let wallet = self.walletsCollection.wallet(atIndex: row)
+        let wallet = WalletsCollection.shared.wallet(atIndex: row)
         
         if tableColumn == tableView.tableColumns[0] { // Visibility
             if let cellView = tableView.make(withIdentifier: visiblityCellId, owner: nil) as? NSTableCellView {
@@ -110,6 +110,6 @@ extension BBWalletSettingsViewController: NSTableViewDelegate {
 
 extension BBWalletSettingsViewController: NSTableViewDataSource {
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return self.walletsCollection.wallets.count
+        return WalletsCollection.shared.wallets.count
     }
 }
