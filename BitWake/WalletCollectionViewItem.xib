@@ -33,7 +33,7 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aif-yc-Zen">
-                    <rect key="frame" x="8" y="10" width="38" height="12"/>
+                    <rect key="frame" x="6" y="10" width="38" height="12"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Address" id="C9u-oL-0XG">
                         <font key="font" size="9" name="Helvetica"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,7 +58,7 @@
                 <constraint firstItem="MMh-6C-2dU" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="YB2-MH-JoM"/>
                 <constraint firstItem="foB-uA-JTJ" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="az7-2V-syZ"/>
                 <constraint firstItem="MMh-6C-2dU" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="bsM-pS-DaH"/>
-                <constraint firstItem="aif-yc-Zen" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="s5h-FW-Ni8"/>
+                <constraint firstItem="aif-yc-Zen" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="s5h-FW-Ni8"/>
                 <constraint firstAttribute="trailing" secondItem="foB-uA-JTJ" secondAttribute="trailing" constant="10" id="yvc-q8-PKw"/>
             </constraints>
         </customView>
