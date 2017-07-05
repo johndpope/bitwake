@@ -48,11 +48,16 @@ class WalletsViewController: NSViewController {
 
 extension WalletsViewController: NSCollectionViewDataSource {
     public func numberOfSections(in collectionView: NSCollectionView) -> Int {
-        return 1
+        return 2
     }
     
     public func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
-        return WalletsCollection.shared.count
+        if section == 0 { // Wallets
+            return WalletsCollection.shared.count
+        }
+        else { // Transactions
+            return 0
+        }
     }
     
     public func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
@@ -66,6 +71,14 @@ extension WalletsViewController: NSCollectionViewDataSource {
     }
     
     public func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> NSView {
-        return NSView()
+        let headerView = self.collectionView.makeSupplementaryView(ofKind: "header", withIdentifier: "WalletCollectionViewHeaderView", for: indexPath) as! WalletCollectionViewHeaderView
+        if indexPath.section == 0 { // Wallets
+            headerView.titleLabel.stringValue = "Wallets"
+        }
+        else { // Transactions
+            headerView.titleLabel.stringValue = "Transactions"
+        }
+        
+        return headerView
     }
 }

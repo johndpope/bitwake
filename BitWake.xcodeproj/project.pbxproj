@@ -25,6 +25,8 @@
 		859A2E801EC742F40088D8A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859A2E7E1EC742F40088D8A1 /* Main.storyboard */; };
 		859A2E8B1EC742F40088D8A1 /* BitWakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E8A1EC742F40088D8A1 /* BitWakeTests.swift */; };
 		859A2E961EC742F40088D8A1 /* BitWakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E951EC742F40088D8A1 /* BitWakeUITests.swift */; };
+		85AF56721F0D478100D3F564 /* WalletCollectionViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85AF56711F0D478100D3F564 /* WalletCollectionViewHeaderView.xib */; };
+		85AF56741F0D47A400D3F564 /* WalletCollectionViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF56731F0D47A400D3F564 /* WalletCollectionViewHeaderView.swift */; };
 		85B9C1C81EDAD315000ABC66 /* WalletSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B9C1C71EDAD315000ABC66 /* WalletSettingsViewController.swift */; };
 		92FB5EF0559AAD1ACAE435B2 /* Pods_BitWakeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE71AE95078668CBCCB4188C /* Pods_BitWakeTests.framework */; };
 		951BC9549B14C2CD2F166516 /* Pods_BitWakeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B873CABABFB4A26921B75BB1 /* Pods_BitWakeUITests.framework */; };
@@ -75,6 +77,8 @@
 		859A2E911EC742F40088D8A1 /* BitWakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitWakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		859A2E951EC742F40088D8A1 /* BitWakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitWakeUITests.swift; sourceTree = "<group>"; };
 		859A2E971EC742F40088D8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85AF56711F0D478100D3F564 /* WalletCollectionViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletCollectionViewHeaderView.xib; sourceTree = "<group>"; };
+		85AF56731F0D47A400D3F564 /* WalletCollectionViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletCollectionViewHeaderView.swift; sourceTree = "<group>"; };
 		85B9C1C71EDAD315000ABC66 /* WalletSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletSettingsViewController.swift; sourceTree = "<group>"; };
 		A0D41AFF234738DB21CE8242 /* Pods_BitWake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitWake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B873CABABFB4A26921B75BB1 /* Pods_BitWakeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitWakeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +164,8 @@
 				85690E041EF65DA00094D88A /* WalletsListLayout.swift */,
 				8555F8C71F03D7D200F55C22 /* WalletsViewController.swift */,
 				8555F8C81F03D7D200F55C22 /* WalletsViewController.xib */,
+				85AF56711F0D478100D3F564 /* WalletCollectionViewHeaderView.xib */,
+				85AF56731F0D47A400D3F564 /* WalletCollectionViewHeaderView.swift */,
 			);
 			name = "Wallet UI";
 			sourceTree = "<group>";
@@ -350,6 +356,7 @@
 				8555F8CA1F03D7D200F55C22 /* WalletsViewController.xib in Resources */,
 				85690E031EF59B4F0094D88A /* WalletCollectionViewItem.xib in Resources */,
 				859A2E801EC742F40088D8A1 /* Main.storyboard in Resources */,
+				85AF56721F0D478100D3F564 /* WalletCollectionViewHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +523,7 @@
 				85690E051EF65DA00094D88A /* WalletsListLayout.swift in Sources */,
 				8514F8741EEAF082005E5CBA /* Wallet.swift in Sources */,
 				8555F8CE1F08E25F00F55C22 /* Blockchain.swift in Sources */,
+				85AF56741F0D47A400D3F564 /* WalletCollectionViewHeaderView.swift in Sources */,
 				8514F8711EEAEF16005E5CBA /* WalletsCollection.swift in Sources */,
 				85856DDE1F0A89640084A372 /* TransactionCenter.swift in Sources */,
 				859A2E791EC742F40088D8A1 /* AppDelegate.swift in Sources */,

@@ -26,5 +26,6 @@ class WalletsListLayout: NSCollectionViewFlowLayout {
         self.sectionInset = EdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
         self.minimumInteritemSpacing = 2.0
         self.minimumLineSpacing = 0.0
+        self.headerReferenceSize = NSSize(width: collectionView!.bounds.width, height: 30.0)
     }
 }
