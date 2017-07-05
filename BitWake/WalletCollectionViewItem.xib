@@ -28,7 +28,7 @@
                     <rect key="frame" x="6" y="23" width="40" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Name" id="6D0-Pr-l4t">
                         <font key="font" size="13" name="Helvetica-Bold"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
@@ -36,7 +36,7 @@
                     <rect key="frame" x="8" y="9" width="41" height="13"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Address" id="C9u-oL-0XG">
                         <font key="font" size="10" name="Helvetica"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
@@ -44,7 +44,7 @@
                     <rect key="frame" x="220" y="16" width="42" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0 BTC" id="4x9-Lb-UDd">
                         <font key="font" metaFont="system"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
