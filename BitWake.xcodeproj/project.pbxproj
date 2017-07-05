@@ -159,13 +159,13 @@
 		85690DFB1EF58DB60094D88A /* Wallet UI */ = {
 			isa = PBXGroup;
 			children = (
+				85690E041EF65DA00094D88A /* WalletsListLayout.swift */,
+				85AF56731F0D47A400D3F564 /* WalletCollectionViewHeaderView.swift */,
+				85AF56711F0D478100D3F564 /* WalletCollectionViewHeaderView.xib */,
 				85690E001EF59B4F0094D88A /* WalletCollectionViewItem.swift */,
 				85690E011EF59B4F0094D88A /* WalletCollectionViewItem.xib */,
-				85690E041EF65DA00094D88A /* WalletsListLayout.swift */,
 				8555F8C71F03D7D200F55C22 /* WalletsViewController.swift */,
 				8555F8C81F03D7D200F55C22 /* WalletsViewController.xib */,
-				85AF56711F0D478100D3F564 /* WalletCollectionViewHeaderView.xib */,
-				85AF56731F0D47A400D3F564 /* WalletCollectionViewHeaderView.swift */,
 			);
 			name = "Wallet UI";
 			sourceTree = "<group>";
