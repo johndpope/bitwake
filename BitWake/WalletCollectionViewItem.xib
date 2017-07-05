@@ -9,6 +9,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="WalletCollectionViewItem" customModule="BitWake" customModuleProvider="target">
             <connections>
                 <outlet property="addressTextField" destination="aif-yc-Zen" id="Oc8-9C-XKP"/>
+                <outlet property="backgroundView" destination="9O7-Vg-lag" id="RKa-Qo-hes"/>
                 <outlet property="balanceTextField" destination="foB-uA-JTJ" id="fOO-ga-Bm1"/>
                 <outlet property="nameTextField" destination="MMh-6C-2dU" id="95W-GM-IsE"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
@@ -17,9 +18,12 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView identifier="WalletCollectionViewItem" id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="270" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="9O7-Vg-lag">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="50"/>
+                </customView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMh-6C-2dU">
                     <rect key="frame" x="6" y="23" width="40" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Name" id="6D0-Pr-l4t">
@@ -37,7 +41,7 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foB-uA-JTJ">
-                    <rect key="frame" x="150" y="16" width="42" height="17"/>
+                    <rect key="frame" x="220" y="16" width="42" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0 BTC" id="4x9-Lb-UDd">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -46,7 +50,11 @@
                 </textField>
             </subviews>
             <constraints>
+                <constraint firstItem="9O7-Vg-lag" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="0Zf-3V-Kbh"/>
                 <constraint firstItem="aif-yc-Zen" firstAttribute="top" secondItem="MMh-6C-2dU" secondAttribute="bottom" constant="1" id="5jV-wY-Ncd"/>
+                <constraint firstAttribute="bottom" secondItem="9O7-Vg-lag" secondAttribute="bottom" id="KTg-hX-qeL"/>
+                <constraint firstAttribute="trailing" secondItem="9O7-Vg-lag" secondAttribute="trailing" id="PYu-Yx-BFI"/>
+                <constraint firstItem="9O7-Vg-lag" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="W9D-ho-6zP"/>
                 <constraint firstItem="MMh-6C-2dU" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="YB2-MH-JoM"/>
                 <constraint firstItem="foB-uA-JTJ" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="az7-2V-syZ"/>
                 <constraint firstItem="MMh-6C-2dU" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="bsM-pS-DaH"/>
@@ -57,6 +65,7 @@
         <collectionViewItem id="xG6-2e-YWX" customClass="WalletCollectionViewItem" customModule="BitWake" customModuleProvider="target">
             <connections>
                 <outlet property="addressTextField" destination="aif-yc-Zen" id="TLf-CK-jRZ"/>
+                <outlet property="backgroundView" destination="9O7-Vg-lag" id="t25-h7-96a"/>
                 <outlet property="nameTextField" destination="MMh-6C-2dU" id="icN-Se-pLv"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="znE-Yi-WBj"/>
             </connections>

@@ -9,6 +9,7 @@
 import Cocoa
 
 class WalletCollectionViewItem: NSCollectionViewItem {
+    @IBOutlet weak var backgroundView: NSView!
     @IBOutlet weak var nameTextField: NSTextField!
     @IBOutlet weak var addressTextField: NSTextField!
     @IBOutlet weak var balanceTextField: NSTextField!
@@ -54,7 +55,6 @@ class WalletCollectionViewItem: NSCollectionViewItem {
             self.balanceTextField.stringValue = "\(balance) BTC"
         }
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +63,15 @@ class WalletCollectionViewItem: NSCollectionViewItem {
         self.addressTextField.stringValue = "Address here"
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = NSColor.white.cgColor
+        
+        self.createGradientBackground()
+    }
+    
+    func createGradientBackground() {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        gradientLayer.colors = [NSColor.red.cgColor, NSColor.yellow.cgColor]
+        self.backgroundView.layer?.addSublayer(gradientLayer)
     }
 }
 
