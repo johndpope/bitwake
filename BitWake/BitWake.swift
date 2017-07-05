@@ -11,6 +11,8 @@ import Foundation
 let kUserDefaultsSuiteName = "com.bitwake"
 let kWalletsFileName = "walletsCollectionStore"
 
+let kCollectionViewHeaderHeight: CGFloat = 28.0
+
 enum Cryptocurrency {
     case BTC
 }
