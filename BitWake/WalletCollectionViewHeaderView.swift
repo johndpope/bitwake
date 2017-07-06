@@ -12,6 +12,9 @@ import Cocoa
 class WalletCollectionViewHeaderView: NSView {
     @IBOutlet weak var titleLabel: NSTextField!
     
-    
+    override func viewDidMoveToSuperview() {
+        super.viewDidMoveToSuperview()
+        self.layer?.backgroundColor = NSColor(red: 121/255.0, green: 160/255.0, blue: 201/255.0, alpha: 1.0).cgColor
+    }
 }
 
