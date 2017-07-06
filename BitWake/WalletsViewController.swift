@@ -35,7 +35,7 @@ class WalletsViewController: NSViewController {
      */
     public func updateHeight() {
         let numberOfWallets = WalletsCollection.shared.count
-        let height: CGFloat = CGFloat(numberOfWallets) * WalletCollectionViewItem.size.height + 2 * kCollectionViewHeaderHeight
+        let height: CGFloat = CGFloat(numberOfWallets) * WalletCollectionViewItem.size.height + 1 * kCollectionViewHeaderHeight
         
         self.setHeight(height)
     }
