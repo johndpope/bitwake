@@ -80,6 +80,8 @@
 		85AF56711F0D478100D3F564 /* WalletCollectionViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletCollectionViewHeaderView.xib; sourceTree = "<group>"; };
 		85AF56731F0D47A400D3F564 /* WalletCollectionViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletCollectionViewHeaderView.swift; sourceTree = "<group>"; };
 		85B9C1C71EDAD315000ABC66 /* WalletSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletSettingsViewController.swift; sourceTree = "<group>"; };
+		85C24FFE1F10DC7E00E91B0A /* NSMenu+setHasPadding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMenu+setHasPadding.h"; sourceTree = "<group>"; };
+		85C24FFF1F10DD3200E91B0A /* bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "bridging-header.h"; path = "../bridging-header.h"; sourceTree = "<group>"; };
 		A0D41AFF234738DB21CE8242 /* Pods_BitWake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitWake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B873CABABFB4A26921B75BB1 /* Pods_BitWakeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitWakeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64E5AD188BDF8E254E2CD04 /* Pods-BitWake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitWake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitWake/Pods-BitWake.debug.xcconfig"; sourceTree = "<group>"; };
@@ -195,12 +197,14 @@
 		859A2E771EC742F40088D8A1 /* BitWake */ = {
 			isa = PBXGroup;
 			children = (
+				85C24FFD1F10DC6000E91B0A /* Categories */,
 				8555F8CC1F08E24D00F55C22 /* Blockchain */,
 				85690DFB1EF58DB60094D88A /* Wallet UI */,
 				8514F8721EEAF076005E5CBA /* Models */,
 				855A48F91EED701700F3D248 /* Settings */,
 				859A2E781EC742F40088D8A1 /* AppDelegate.swift */,
 				85690DF71EF433F50094D88A /* BitWake.swift */,
+				85C24FFF1F10DD3200E91B0A /* bridging-header.h */,
 				859A2E7C1EC742F40088D8A1 /* Assets.xcassets */,
 				859A2E7E1EC742F40088D8A1 /* Main.storyboard */,
 				859A2E811EC742F40088D8A1 /* Info.plist */,
@@ -224,6 +228,14 @@
 				859A2E971EC742F40088D8A1 /* Info.plist */,
 			);
 			path = BitWakeUITests;
+			sourceTree = "<group>";
+		};
+		85C24FFD1F10DC6000E91B0A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				85C24FFE1F10DC7E00E91B0A /* NSMenu+setHasPadding.h */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		BEFF3FFCEC39C3FAC28086EB /* Frameworks */ = {
@@ -680,6 +692,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitWake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bridging-header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -694,6 +707,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niklasberglund.BitWake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bridging-header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
