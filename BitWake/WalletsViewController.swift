@@ -48,7 +48,7 @@ class WalletsViewController: NSViewController {
 
 extension WalletsViewController: NSCollectionViewDataSource {
     public func numberOfSections(in collectionView: NSCollectionView) -> Int {
-        return 2
+        return 1
     }
     
     public func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
