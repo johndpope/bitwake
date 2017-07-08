@@ -8,9 +8,18 @@
 
 import Cocoa
 
+protocol WalletCollectionViewItemNewDelegate {
+    func wantToSaveWallet(_ wallet: Wallet)
+}
+
 class WalletCollectionViewItemNew: NSCollectionViewItem {
     
     public static let height = CGFloat(60.0)
+    
+    fileprivate var delegate: WalletCollectionViewItemNewDelegate?
+    
+    @IBOutlet weak var nameTextField: NSTextField!
+    @IBOutlet weak var addressTextField: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,5 +28,14 @@ class WalletCollectionViewItemNew: NSCollectionViewItem {
     
     @IBAction func clickedSave(_ sender: Any) {
         debugPrint("Save")
+        
+        let walletName = self.nameTextField.stringValue
+        let walletAddress = self.addressTextField.stringValue
+        
+        if (!walletName.isEmpty && !walletAddress.isEmpty)
+        {
+            let wallet = Wallet(name: walletName, address: walletAddress)
+            self.delegate?.wantToSaveWallet(wallet)
+        }
     }
 }
