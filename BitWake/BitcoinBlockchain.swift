@@ -48,6 +48,11 @@ class BitcoinBlockchain {
         let url = URL(string: "https://blockchain.info/q/addressbalance/" + address!)
         
         let dataTask = URLSession.shared.dataTask(with: url!) { data, response, error in
+            guard error == nil else {
+                debugPrint("Error loading Bitcoin wallet balance")
+                return
+            }
+            
             let dataString = String(data: data!, encoding: String.Encoding.utf8)
             let satoshiBalance = Int(dataString!)
             
