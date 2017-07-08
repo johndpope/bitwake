@@ -22,17 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         BitWake.ensureHaveApplicationSupportDirectory()
         
-        self.statusItem.title = "BitWake"
-        self.statusItem.menu = self.menu
-        
-        self.walletsViewController = WalletsViewController(nibName: "WalletsViewController", bundle: nil)
-        let walletsMenuItem = NSMenuItem(title: "Custom view", action: nil, keyEquivalent: "")
-        walletsMenuItem.view = walletsViewController?.view
-        self.menu.insertItem(walletsMenuItem, at: 0)
-        
-        // Using private method to remove top and bottom padding. Would be way better if we could do this without using this private method. Let's wait for High Sierra and see. TODO: Use public method if/when available
-        self.menu._setHasPadding(false, onEdge: 1)
-        self.menu._setHasPadding(false, onEdge: 3)
+        self.setupMenu()
         
         self.settingsClicked(self)
     }
@@ -51,6 +41,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.settingsWindow = storyboard.instantiateController(withIdentifier: "settingsWindow") as? NSWindowController
         
         settingsWindow?.showWindow(self)
+    }
+    
+    private func setupMenu() {
+        self.statusItem.title = "BitWake"
+        self.statusItem.menu = self.menu
+        
+        self.walletsViewController = WalletsViewController(nibName: "WalletsViewController", bundle: nil)
+        let walletsMenuItem = NSMenuItem(title: "Custom view", action: nil, keyEquivalent: "")
+        walletsMenuItem.view = walletsViewController?.view
+        self.menu.insertItem(walletsMenuItem, at: 0)
+        
+        // Using private method to remove top and bottom padding. Would be way better if we could do this without using this private method. Let's wait for High Sierra and see. TODO: Use public method if/when available
+        self.menu._setHasPadding(false, onEdge: 1)
+        self.menu._setHasPadding(false, onEdge: 3)
     }
 }
 
