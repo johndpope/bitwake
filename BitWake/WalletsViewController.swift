@@ -12,6 +12,8 @@ class WalletsViewController: NSViewController {
     
     @IBOutlet weak var collectionView: NSCollectionView!
     
+    fileprivate var shouldShowNewWalletItem = true
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +37,11 @@ class WalletsViewController: NSViewController {
      */
     public func updateHeight() {
         let numberOfWallets = WalletsCollection.shared.count
-        let height: CGFloat = CGFloat(numberOfWallets) * WalletCollectionViewItem.size.height + 1 * kCollectionViewHeaderHeight
+        var height: CGFloat = CGFloat(numberOfWallets) * WalletCollectionViewItem.size.height + 1 * kCollectionViewHeaderHeight
+        
+        if self.shouldShowNewWalletItem {
+            height += WalletCollectionViewItemNew.height
+        }
         
         self.setHeight(height)
     }
@@ -53,7 +59,13 @@ extension WalletsViewController: NSCollectionViewDataSource {
     
     public func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         if section == 0 { // Wallets
-            return WalletsCollection.shared.count
+            var count = WalletsCollection.shared.count
+            
+            if self.shouldShowNewWalletItem {
+                count += 1
+            }
+            
+            return count
         }
         else { // Transactions
             return 0
@@ -61,13 +73,20 @@ extension WalletsViewController: NSCollectionViewDataSource {
     }
     
     public func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
-        let collectionViewItem = self.collectionView.makeItem(withIdentifier: "WalletCollectionViewItem", for: indexPath) as! WalletCollectionViewItem
-        
-        if let wallet = WalletsCollection.shared.wallet(atIndex: indexPath.item) {
-            collectionViewItem.wallet = wallet
+        if indexPath.item < WalletsCollection.shared.count { // Wallet cell
+            let collectionViewItem = self.collectionView.makeItem(withIdentifier: "WalletCollectionViewItem", for: indexPath) as! WalletCollectionViewItem
+            
+            if let wallet = WalletsCollection.shared.wallet(atIndex: indexPath.item) {
+                collectionViewItem.wallet = wallet
+            }
+            
+            return collectionViewItem
         }
-        
-        return collectionViewItem
+        else { // New wallet cell
+            let newWalletItem = self.collectionView.makeItem(withIdentifier: "WalletCollectionViewItemNew", for: indexPath) as! WalletCollectionViewItemNew
+            
+            return newWalletItem
+        }
     }
     
     public func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> NSView {
