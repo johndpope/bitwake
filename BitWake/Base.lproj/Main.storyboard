@@ -923,7 +923,6 @@
                             <constraint firstAttribute="trailing" secondItem="ZaL-jy-4ai" secondAttribute="trailing" constant="20" id="ibJ-fy-iUP"/>
                             <constraint firstItem="ZaL-jy-4ai" firstAttribute="leading" secondItem="FqK-05-hcV" secondAttribute="leading" constant="20" id="m21-FF-Nt4"/>
                             <constraint firstItem="AqF-Om-GwK" firstAttribute="leading" secondItem="6Yp-L6-r7X" secondAttribute="leading" constant="-1" id="z36-av-tXW"/>
-                            <constraint firstItem="IXU-Fj-qUj" firstAttribute="height" secondItem="AqF-Om-GwK" secondAttribute="height" id="zKK-gd-dAI"/>
                         </constraints>
                     </view>
                     <connections>
