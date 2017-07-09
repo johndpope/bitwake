@@ -36,7 +36,8 @@ class WalletCollectionViewItem: NSCollectionViewItem {
             }
             
             if let balance = wallet!.balance {
-                self.balanceTextField.stringValue = "\(balance) BTC"
+                let balanceFormatted = String(format: "%.2f", balance)
+                self.balanceTextField.stringValue = "\(balanceFormatted) BTC"
             }
         }
     }
