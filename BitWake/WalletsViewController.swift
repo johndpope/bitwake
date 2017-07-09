@@ -84,6 +84,7 @@ extension WalletsViewController: NSCollectionViewDataSource {
         }
         else { // New wallet cell
             let newWalletItem = self.collectionView.makeItem(withIdentifier: "WalletCollectionViewItemNew", for: indexPath) as! WalletCollectionViewItemNew
+            newWalletItem.delegate = self
             
             return newWalletItem
         }
@@ -107,6 +108,14 @@ extension WalletsViewController: NSCollectionViewDataSource {
 extension WalletsViewController: WalletCollectionViewHeaderViewDelegate {
     func headerViewClickedNewWallet(_ headerView: WalletCollectionViewHeaderView) {
         self.shouldShowNewWalletItem = true
+        self.collectionView.reloadData()
+        self.updateHeight()
+    }
+}
+
+extension WalletsViewController: WalletCollectionViewItemNewDelegate {
+    func wantToSaveNewWallet(_ wallet: Wallet) {
+        self.shouldShowNewWalletItem = false
         self.collectionView.reloadData()
         self.updateHeight()
     }
