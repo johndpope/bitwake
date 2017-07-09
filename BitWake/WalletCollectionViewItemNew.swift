@@ -16,7 +16,7 @@ class WalletCollectionViewItemNew: NSCollectionViewItem {
     
     public static let height = CGFloat(60.0)
     
-    fileprivate var delegate: WalletCollectionViewItemNewDelegate?
+    public var delegate: WalletCollectionViewItemNewDelegate?
     
     @IBOutlet weak var nameTextField: NSTextField!
     @IBOutlet weak var addressTextField: NSTextField!
