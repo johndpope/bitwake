@@ -115,6 +115,8 @@ extension WalletsViewController: WalletCollectionViewHeaderViewDelegate {
 
 extension WalletsViewController: WalletCollectionViewItemNewDelegate {
     func wantToSaveNewWallet(_ wallet: Wallet) {
+        WalletsCollection.shared.add(wallet)
+        
         self.shouldShowNewWalletItem = false
         self.collectionView.reloadData()
         self.updateHeight()
