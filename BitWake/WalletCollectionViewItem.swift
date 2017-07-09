@@ -72,8 +72,8 @@ class WalletCollectionViewItem: NSCollectionViewItem {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.view.bounds
         gradientLayer.colors = [
-            NSColor(red: 30/255.0, green: 87/255.0, blue: 153/255.0, alpha: 1.0).cgColor,
-            NSColor(red: 125/255.0, green: 185/255.0, blue: 232/255.0, alpha: 1.0).cgColor
+            NSColor(white: 0.988, alpha: 1.0).cgColor,
+            NSColor(white: 0.945, alpha: 1.0).cgColor
         ]
         
         self.backgroundView.layer?.addSublayer(gradientLayer)

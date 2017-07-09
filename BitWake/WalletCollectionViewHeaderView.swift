@@ -20,7 +20,7 @@ class WalletCollectionViewHeaderView: NSView {
     
     override func viewDidMoveToSuperview() {
         super.viewDidMoveToSuperview()
-        self.layer?.backgroundColor = NSColor(red: 121/255.0, green: 160/255.0, blue: 201/255.0, alpha: 1.0).cgColor
+        self.layer?.backgroundColor = NSColor(white:0.320, alpha: 1.0).cgColor
     }
     
     @IBAction func clickedNewWalletButton(_ sender: Any) {
