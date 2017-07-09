@@ -12,7 +12,7 @@ class WalletsViewController: NSViewController {
     
     @IBOutlet weak var collectionView: NSCollectionView!
     
-    fileprivate var shouldShowNewWalletItem = true
+    fileprivate var shouldShowNewWalletItem = false
     
     
     override func viewDidLoad() {
@@ -91,6 +91,8 @@ extension WalletsViewController: NSCollectionViewDataSource {
     
     public func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> NSView {
         let headerView = self.collectionView.makeSupplementaryView(ofKind: "header", withIdentifier: "WalletCollectionViewHeaderView", for: indexPath) as! WalletCollectionViewHeaderView
+        headerView.delegate = self
+        
         if indexPath.section == 0 { // Wallets
             headerView.titleLabel.stringValue = "Wallets"
         }
@@ -99,5 +101,13 @@ extension WalletsViewController: NSCollectionViewDataSource {
         }
         
         return headerView
+    }
+}
+
+extension WalletsViewController: WalletCollectionViewHeaderViewDelegate {
+    func headerViewClickedNewWallet(_ headerView: WalletCollectionViewHeaderView) {
+        self.shouldShowNewWalletItem = true
+        self.collectionView.reloadData()
+        self.updateHeight()
     }
 }
