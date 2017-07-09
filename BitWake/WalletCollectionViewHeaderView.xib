@@ -21,14 +21,33 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mJL-Ub-haG">
+                    <rect key="frame" x="245" y="3" width="20" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Obp-Ga-MF0"/>
+                        <constraint firstAttribute="height" constant="20" id="wT8-1W-dK4"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BLx-uE-c8f">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="clickedNewWalletButton:" target="c22-O7-iKe" id="lf0-1q-MSx"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="cHN-Bs-oRB" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="7Ax-TI-3i3"/>
+                <constraint firstAttribute="trailing" secondItem="mJL-Ub-haG" secondAttribute="trailing" constant="5" id="B12-nZ-75f"/>
                 <constraint firstItem="cHN-Bs-oRB" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="NYY-LY-vd2"/>
+                <constraint firstItem="mJL-Ub-haG" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="kRu-Tx-Q3B"/>
             </constraints>
             <connections>
                 <outlet property="titleLabel" destination="cHN-Bs-oRB" id="Ddh-Nn-lsX"/>
             </connections>
         </customView>
     </objects>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+    </resources>
 </document>
