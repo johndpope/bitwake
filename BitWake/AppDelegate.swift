@@ -53,8 +53,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.menu.insertItem(walletsMenuItem, at: 0)
         
         // Using private method to remove top and bottom padding. Would be way better if we could do this without using this private method. Let's wait for High Sierra and see. TODO: Use public method if/when available
-        self.menu._setHasPadding(false, onEdge: 1)
-        self.menu._setHasPadding(false, onEdge: 3)
+        self.menu._setHasPadding(false, on: .minY)
+        self.menu._setHasPadding(false, on: .maxY)
     }
 }
 

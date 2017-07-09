@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 @interface NSMenu (setHasPadding)
-- (void)_setHasPadding:(BOOL)pad onEdge:(int)whatEdge;
+- (void)_setHasPadding:(BOOL)pad onEdge:(NSRectEdge)whatEdge;
 @end
