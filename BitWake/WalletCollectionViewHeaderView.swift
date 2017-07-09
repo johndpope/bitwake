@@ -9,8 +9,14 @@
 import Foundation
 import Cocoa
 
+protocol WalletCollectionViewHeaderViewDelegate {
+    func headerViewClickedNewWallet(_ headerView: WalletCollectionViewHeaderView)
+}
+
 class WalletCollectionViewHeaderView: NSView {
     @IBOutlet weak var titleLabel: NSTextField!
+    
+    public var delegate: WalletCollectionViewHeaderViewDelegate?
     
     override func viewDidMoveToSuperview() {
         super.viewDidMoveToSuperview()
@@ -19,6 +25,8 @@ class WalletCollectionViewHeaderView: NSView {
     
     @IBAction func clickedNewWalletButton(_ sender: Any) {
         debugPrint("New wallet")
+        
+        self.delegate?.headerViewClickedNewWallet(self)
     }
 }
 
