@@ -9,7 +9,7 @@
 import Cocoa
 
 protocol WalletCollectionViewItemNewDelegate {
-    func wantToSaveWallet(_ wallet: Wallet)
+    func wantToSaveNewWallet(_ wallet: Wallet)
 }
 
 class WalletCollectionViewItemNew: NSCollectionViewItem {
@@ -35,7 +35,7 @@ class WalletCollectionViewItemNew: NSCollectionViewItem {
         if (!walletName.isEmpty && !walletAddress.isEmpty)
         {
             let wallet = Wallet(name: walletName, address: walletAddress)
-            self.delegate?.wantToSaveWallet(wallet)
+            self.delegate?.wantToSaveNewWallet(wallet)
         }
     }
 }
