@@ -178,6 +178,15 @@
 			name = "Wallet UI";
 			sourceTree = "<group>";
 		};
+		857488D61F13C25900BFFA2C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				85690DFB1EF58DB60094D88A /* Wallet UI */,
+				855A48F91EED701700F3D248 /* Settings */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		859A2E6C1EC742F30088D8A1 = {
 			isa = PBXGroup;
 			children = (
@@ -205,9 +214,8 @@
 			children = (
 				85C24FFD1F10DC6000E91B0A /* Categories */,
 				8555F8CC1F08E24D00F55C22 /* Blockchain */,
-				85690DFB1EF58DB60094D88A /* Wallet UI */,
 				8514F8721EEAF076005E5CBA /* Models */,
-				855A48F91EED701700F3D248 /* Settings */,
+				857488D61F13C25900BFFA2C /* UI */,
 				859A2E781EC742F40088D8A1 /* AppDelegate.swift */,
 				85690DF71EF433F50094D88A /* BitWake.swift */,
 				85C24FFF1F10DD3200E91B0A /* bridging-header.h */,
