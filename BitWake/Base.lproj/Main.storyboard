@@ -658,26 +658,10 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="BitWake" customModuleProvider="target">
                     <connections>
                         <outlet property="menu" destination="A48-kG-OIs" id="id0-ET-O37"/>
-                        <outlet property="quitItem" destination="IRs-pM-DoH" id="psz-RX-LDh"/>
                     </connections>
                 </customObject>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <menu id="A48-kG-OIs">
-                    <items>
-                        <menuItem title="Settings" id="ndf-9h-HmU">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                            <connections>
-                                <action selector="settingsClicked:" target="Voe-Tx-rLC" id="Iib-y4-3Y9"/>
-                            </connections>
-                        </menuItem>
-                        <menuItem title="Quit" id="IRs-pM-DoH">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                            <connections>
-                                <action selector="quitClicked:" target="Voe-Tx-rLC" id="0lE-li-ecb"/>
-                            </connections>
-                        </menuItem>
-                    </items>
-                </menu>
+                <menu id="A48-kG-OIs"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
@@ -905,7 +889,7 @@
                                 </connections>
                             </segmentedControl>
                             <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXU-Fj-qUj">
-                                <rect key="frame" x="86" y="20" width="344" height="23"/>
+                                <rect key="frame" x="86" y="19" width="344" height="23"/>
                                 <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="f5w-gb-bxY">
                                     <behavior key="behavior" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>

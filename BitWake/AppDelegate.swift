@@ -13,7 +13,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     @IBOutlet weak var menu: NSMenu!
-    @IBOutlet weak var quitItem: NSMenuItem!
     
     var settingsWindow: NSWindowController?
     var walletsViewController: WalletsViewController?
@@ -24,24 +23,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         BitWake.ensureHaveApplicationSupportDirectory()
         
         self.setupMenu()
-        
-        self.settingsClicked(self)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
-    }
-    
-    @IBAction func quitClicked(_ sender: Any) {
-        NSApplication.shared().terminate(self)
-    }
-    
-    @IBAction func settingsClicked(_ sender: Any) {
-        let storyboard = NSStoryboard(name: "Main", bundle: nil)
-        
-        self.settingsWindow = storyboard.instantiateController(withIdentifier: "settingsWindow") as? NSWindowController
-        
-        settingsWindow?.showWindow(self)
     }
     
     private func setupMenu() {
