@@ -21,6 +21,6 @@ class ButtonsBarViewController: NSViewController {
     }
     
     @IBAction func clickedQuitButton(_ sender: Any) {
-        debugPrint("Quit")
+        NSApplication.shared().terminate(self)
     }
 }
