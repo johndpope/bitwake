@@ -19,6 +19,8 @@
 		85690E021EF59B4F0094D88A /* WalletCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85690E001EF59B4F0094D88A /* WalletCollectionViewItem.swift */; };
 		85690E031EF59B4F0094D88A /* WalletCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85690E011EF59B4F0094D88A /* WalletCollectionViewItem.xib */; };
 		85690E051EF65DA00094D88A /* WalletsListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85690E041EF65DA00094D88A /* WalletsListLayout.swift */; };
+		857488E21F13E15100BFFA2C /* ButtonsBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857488E01F13E15100BFFA2C /* ButtonsBarViewController.swift */; };
+		857488E31F13E15100BFFA2C /* ButtonsBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857488E11F13E15100BFFA2C /* ButtonsBarViewController.xib */; };
 		85856DDE1F0A89640084A372 /* TransactionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85856DDD1F0A89640084A372 /* TransactionCenter.swift */; };
 		859A2E791EC742F40088D8A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A2E781EC742F40088D8A1 /* AppDelegate.swift */; };
 		859A2E7D1EC742F40088D8A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859A2E7C1EC742F40088D8A1 /* Assets.xcassets */; };
@@ -67,6 +69,8 @@
 		85690E001EF59B4F0094D88A /* WalletCollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletCollectionViewItem.swift; sourceTree = "<group>"; };
 		85690E011EF59B4F0094D88A /* WalletCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletCollectionViewItem.xib; sourceTree = "<group>"; };
 		85690E041EF65DA00094D88A /* WalletsListLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsListLayout.swift; sourceTree = "<group>"; };
+		857488E01F13E15100BFFA2C /* ButtonsBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsBarViewController.swift; sourceTree = "<group>"; };
+		857488E11F13E15100BFFA2C /* ButtonsBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonsBarViewController.xib; sourceTree = "<group>"; };
 		85856DDD1F0A89640084A372 /* TransactionCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCenter.swift; sourceTree = "<group>"; };
 		859A2E751EC742F40088D8A1 /* BitWake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitWake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859A2E781EC742F40088D8A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -183,8 +187,18 @@
 			children = (
 				85690DFB1EF58DB60094D88A /* Wallet UI */,
 				855A48F91EED701700F3D248 /* Settings */,
+				857488D71F13C28600BFFA2C /* Bottom buttons bar */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		857488D71F13C28600BFFA2C /* Bottom buttons bar */ = {
+			isa = PBXGroup;
+			children = (
+				857488E01F13E15100BFFA2C /* ButtonsBarViewController.swift */,
+				857488E11F13E15100BFFA2C /* ButtonsBarViewController.xib */,
+			);
+			name = "Bottom buttons bar";
 			sourceTree = "<group>";
 		};
 		859A2E6C1EC742F30088D8A1 = {
@@ -380,6 +394,7 @@
 			files = (
 				859A2E7D1EC742F40088D8A1 /* Assets.xcassets in Resources */,
 				85C2500B1F10F44D00E91B0A /* WalletCollectionViewItemNew.xib in Resources */,
+				857488E31F13E15100BFFA2C /* ButtonsBarViewController.xib in Resources */,
 				8555F8CA1F03D7D200F55C22 /* WalletsViewController.xib in Resources */,
 				85690E031EF59B4F0094D88A /* WalletCollectionViewItem.xib in Resources */,
 				859A2E801EC742F40088D8A1 /* Main.storyboard in Resources */,
@@ -557,6 +572,7 @@
 				859A2E791EC742F40088D8A1 /* AppDelegate.swift in Sources */,
 				85690E021EF59B4F0094D88A /* WalletCollectionViewItem.swift in Sources */,
 				8555F8D01F08E33200F55C22 /* BitcoinBlockchain.swift in Sources */,
+				857488E21F13E15100BFFA2C /* ButtonsBarViewController.swift in Sources */,
 				85690DF81EF433F50094D88A /* BitWake.swift in Sources */,
 				8555F8C91F03D7D200F55C22 /* WalletsViewController.swift in Sources */,
 				85B9C1C81EDAD315000ABC66 /* WalletSettingsViewController.swift in Sources */,
