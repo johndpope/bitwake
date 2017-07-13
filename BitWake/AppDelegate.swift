@@ -40,19 +40,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         walletsMenuItem.view = walletsViewController?.view
         self.menu.insertItem(walletsMenuItem, at: 0)
         
-        //self.buttonsBarView = buttonsBarView(nib)
-        
-        /*var nibObjects = NSArray()
-        if Bundle.main.loadNibNamed("ButtonsBarView", owner: self.buttonsBarView, topLevelObjects: &nibObjects) {
-            let nibViews = (nibObjects as Array).filter { $0 is ButtonsBarView }
-            self.buttonsBarView = nibViews.first as? ButtonsBarView
-            
-            let buttonsBarMenuItem = NSMenuItem(title: "Custom view", action: nil, keyEquivalent: "")
-            buttonsBarMenuItem.view = self.buttonsBarView
-            self.menu.insertItem(buttonsBarMenuItem, at: 1)
-        }*/
-        
-        
         self.buttonsBarViewController = ButtonsBarViewController(nibName: "ButtonsBarViewController", bundle: nil)
         let buttonsBarMenuItem = NSMenuItem(title: "Custom view", action: nil, keyEquivalent: "")
         buttonsBarMenuItem.view = buttonsBarViewController?.view
