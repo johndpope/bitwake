@@ -17,7 +17,7 @@ class ButtonsBarViewController: NSViewController {
     }
     
     @IBAction func clickedSettingsButton(_ sender: Any) {
-        debugPrint("Settings")
+        BitWake.appDelegate.showSettingsWindow()
     }
     
     @IBAction func clickedQuitButton(_ sender: Any) {
