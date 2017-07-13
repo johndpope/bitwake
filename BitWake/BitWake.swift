@@ -18,6 +18,12 @@ enum Cryptocurrency {
 }
 
 public class BitWake {
+    static var appDelegate: AppDelegate {
+        get {
+            return NSApplication.shared().delegate as! AppDelegate
+        }
+    }
+    
     public static func ensureHaveApplicationSupportDirectory() {
         let applicationSupportUrl = BitWake.applicationSupportUrl()
         
