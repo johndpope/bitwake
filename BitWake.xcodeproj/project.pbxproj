@@ -19,6 +19,7 @@
 		85690E021EF59B4F0094D88A /* WalletCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85690E001EF59B4F0094D88A /* WalletCollectionViewItem.swift */; };
 		85690E031EF59B4F0094D88A /* WalletCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85690E011EF59B4F0094D88A /* WalletCollectionViewItem.xib */; };
 		85690E051EF65DA00094D88A /* WalletsListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85690E041EF65DA00094D88A /* WalletsListLayout.swift */; };
+		857293251F179E5E000F1D54 /* ion-social-bitcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = 857293241F179E5E000F1D54 /* ion-social-bitcoin.png */; };
 		857488E21F13E15100BFFA2C /* ButtonsBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857488E01F13E15100BFFA2C /* ButtonsBarViewController.swift */; };
 		857488E31F13E15100BFFA2C /* ButtonsBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857488E11F13E15100BFFA2C /* ButtonsBarViewController.xib */; };
 		85856DDE1F0A89640084A372 /* TransactionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85856DDD1F0A89640084A372 /* TransactionCenter.swift */; };
@@ -69,6 +70,7 @@
 		85690E001EF59B4F0094D88A /* WalletCollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletCollectionViewItem.swift; sourceTree = "<group>"; };
 		85690E011EF59B4F0094D88A /* WalletCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletCollectionViewItem.xib; sourceTree = "<group>"; };
 		85690E041EF65DA00094D88A /* WalletsListLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsListLayout.swift; sourceTree = "<group>"; };
+		857293241F179E5E000F1D54 /* ion-social-bitcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ion-social-bitcoin.png"; path = "Images/ion-social-bitcoin.png"; sourceTree = "<group>"; };
 		857488E01F13E15100BFFA2C /* ButtonsBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsBarViewController.swift; sourceTree = "<group>"; };
 		857488E11F13E15100BFFA2C /* ButtonsBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonsBarViewController.xib; sourceTree = "<group>"; };
 		85856DDD1F0A89640084A372 /* TransactionCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCenter.swift; sourceTree = "<group>"; };
@@ -182,6 +184,14 @@
 			name = "Wallet UI";
 			sourceTree = "<group>";
 		};
+		857293231F179E4E000F1D54 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				857293241F179E5E000F1D54 /* ion-social-bitcoin.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		857488D61F13C25900BFFA2C /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +236,7 @@
 		859A2E771EC742F40088D8A1 /* BitWake */ = {
 			isa = PBXGroup;
 			children = (
+				857293231F179E4E000F1D54 /* Images */,
 				85C24FFD1F10DC6000E91B0A /* Categories */,
 				8555F8CC1F08E24D00F55C22 /* Blockchain */,
 				8514F8721EEAF076005E5CBA /* Models */,
@@ -396,6 +407,7 @@
 				85C2500B1F10F44D00E91B0A /* WalletCollectionViewItemNew.xib in Resources */,
 				857488E31F13E15100BFFA2C /* ButtonsBarViewController.xib in Resources */,
 				8555F8CA1F03D7D200F55C22 /* WalletsViewController.xib in Resources */,
+				857293251F179E5E000F1D54 /* ion-social-bitcoin.png in Resources */,
 				85690E031EF59B4F0094D88A /* WalletCollectionViewItem.xib in Resources */,
 				859A2E801EC742F40088D8A1 /* Main.storyboard in Resources */,
 				85AF56721F0D478100D3F564 /* WalletCollectionViewHeaderView.xib in Resources */,

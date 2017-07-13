@@ -31,8 +31,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     private func setupMenu() {
-        self.statusItem.title = "BitWake"
+        //self.statusItem.title = "BitWake"
         self.statusItem.menu = self.menu
+        self.statusItem.image = NSImage(named: "ion-social-bitcoin")
         
         self.walletsViewController = WalletsViewController(nibName: "WalletsViewController", bundle: nil)
         let walletsMenuItem = NSMenuItem(title: "Custom view", action: nil, keyEquivalent: "")
