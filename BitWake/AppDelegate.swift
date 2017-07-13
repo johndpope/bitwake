@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     @IBOutlet weak var menu: NSMenu!
     
-    var settingsWindow: NSWindowController?
+    public var settingsWindow: NSWindowController?
     var walletsViewController: WalletsViewController?
     var buttonsBarViewController: ButtonsBarViewController?
 
@@ -23,6 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         BitWake.ensureHaveApplicationSupportDirectory()
         
         self.setupMenu()
+        self.setupSettingsWindow()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -59,6 +60,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Using private method to remove top and bottom padding. Would be way better if we could do this without using this private method. Let's wait for High Sierra and see. TODO: Use public method if/when available
         self.menu._setHasPadding(false, on: .minY)
         self.menu._setHasPadding(false, on: .maxY)
+    }
+    
+    private func setupSettingsWindow() {
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        self.settingsWindow = storyboard.instantiateController(withIdentifier: "settingsWindow") as? NSWindowController
+    }
+    
+    public func showSettingsWindow() {
+        self.settingsWindow?.showWindow(self)
     }
 }
 
